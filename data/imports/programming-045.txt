@@ -1,0 +1,204 @@
+Θέμα Α
+
+Α1.
+
+1. ΣΩΣΤΟ
+
+2. ΛΑΘΟΣ
+
+3. ΛΑΘΟΣ
+
+4. ΣΩΣΤΟ
+
+5. ΣΩΣΤΟ
+
+Α2.
+
+1. β
+
+2. α
+
+3. στ
+
+4. ε
+
+5. Γ
+
+Θέμα Β
+
+Β1.
+
+α) def find_mo(self):
+
+         return (self.vath1+self.vath2)/2.0
+
+β) student1=Student(‘IΩΑΝΝΟΥ’,7,6)
+
+     student1=Student(‘ΑΝΑΣΤΑΣΙΟΥ’,10,9)
+
+
+
+γ)
+
+mo1=student1.find_mo()
+
+mo2=student2.find_mo()
+
+if mo1>mo2:
+
+print student1.onoma,’μεγαλύτερος μέσος όρος’
+
+elif mo2>mo2:
+print student2.onoma,’μεγαλύτερος μέσος όρος’
+
+else:
+
+print student1.onoma
+
+print student2.onoma
+
+Β2.
+
+S=0
+
+For i in range(1,10,2):
+
+          S=S + i
+
+          Print S
+
+Β3.
+
+       A                    7              8             3   4   -2
+   ο
+  1 πέρασμα                -2              7             8   3    4
+  2ο πέρασμα               -2              3             7   8    4
+  3ο πέρασμα               -2              3             4   7    8
+  4ο πέρασμα               -2              3             4   7    8
+
+
+
+
+Θέμα Γ
+
+pl=0
+
+for i in range(10):
+
+  onp=raw_input('δωσε ονομα πολης') #γ1α
+
+  ath=0.0
+
+  for j in range(30):
+
+       th=input('δωσε θερμοκρασια') #γ1β
+
+       while th< -50 or th>50:
+
+         th=input('δωσε θερμοκρασια apo -50 μεχρι 50')
+
+       ath+=th
+
+  mo=ath/30
+  print onp,’μέσος όρος θερμοκρασιών ’,mo #γ2
+
+  if mo<0:
+
+    pl+=1#γ3
+
+  fp=open('therm.txt','a')
+
+  fp.write(onp+' '+str(mo)+'\n')
+
+  fp.close()
+
+print ‘πλήθος πόλεων με μέσο ορo θερμοκρασίας κάτω του 0’,pl
+Θέμα Δ
+
+def anazitisi(c,CODE): #δ4
+
+  n=len(CODE)
+
+  th=-1
+
+  flag=False
+
+  i=0
+
+  while i<n and flag==False:
+
+    if c==CODE[i]:
+
+        th=i
+
+        flag=True
+
+    else:
+
+        i+=1
+
+  return th
+
+
+
+CODE = []
+
+ESODA = []
+
+ath=0.0
+
+kodikos=raw_input('Δώσε κωδικό προϊόντος:')
+
+while kodikos!='ΤΕΛΟΣ':
+
+  CODE.append(kodikos)
+
+  timi_polisis = float(raw_input('Δώσε τιμή πώλησης: ')) #δ1
+
+  temaxia = int(raw_input('Δώσε πλήθος τεμαχίων που πωλήθηκαν: '))
+
+  es=timi_polisis * temaxia
+
+  ath+=es
+
+  ESODA.append(es) #δ2
+
+  kodikos=raw_input('Δώσε κωδικό προϊόντος:')
+kodikos_proiontos = raw_input('Δώσε κωδικό προϊόντος για αναζήτηση: ')
+
+anaz=anazitisi(kodikos_proiontos,CODE)
+
+if anaz==-1:
+
+  print 'Ο κωδικός δεν υπάρχει στη λίστα CODE.'
+
+else:
+
+  print 'Τα έσοδα από τις πωλήσεις του προϊόντος είναι: ', ESODA[anaz] #δ3
+
+athgr=0.0
+
+for i in range(len(CODE)):
+
+  x=CODE[i]
+
+  if x[:2]=='GR':
+
+    athgr+=ESODA[i]
+
+pososto = athgr / ath * 100
+
+
+
+print'Το ποσοστό των εσόδων από ελληνικά προϊόντα είναι:', pososto,'%' #δ5
+
+
+
+Επιμέλεια:
+
+Χατζήπαπας Γιώργος
+
+
+
+και τα κέντρα ΔΙΑΚΡΟΤΗΜΑ: Πειραιάς, Διαδικτυακό
+

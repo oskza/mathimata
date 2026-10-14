@@ -1,0 +1,170 @@
+                ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΣ Η/Υ - ΕΠΑ.Λ.
+
+
+
+
+                    ΠΡΟΤΕΙΝΟΜΕΝΕΣ ΛΥΣΕΙΣ
+
+
+ΘΕΜΑ Α
+
+Α1.
+
+​
+α) ​   Σωστό
+
+β) ​   Λάθος
+
+γ) ​   Σωστό
+
+δ) ​   Λάθος
+
+ε) ​   Σωστό
+
+
+
+
+Α2.
+
+1.​    γ
+
+2. ​   β
+
+3.​    α​
+
+4. ​   ε
+
+5.​    στ
+
+Α3)
+
+(1)​   len(A)
+
+(2)​   N
+
+(3)​   A[j-1]
+
+(4)​   False
+
+(5)​   f
+
+
+1
+                         ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΣ Η/Υ - ΕΠΑ.Λ.
+
+
+
+ΘΕΜΑ Β
+
+Β1.
+(1)​   len(A)
+
+(2)​   N
+
+(3)​   A[j-1]
+
+(4)​   False
+
+(5)​   f
+
+
+Β2.
+
+(1)​   ['MANOLIS', 'MARIA', 'NIKOS', 'LAZAROS']
+
+(2)​   ['MANOLIS', 'MARIA', 'NIKOS']
+
+(3)​   ['MANOLIS', 'MARIA', 'ADAM', 'NIKOS']
+
+(4)​   ['MANOLIS', 'ADAM', 'NIKOS']
+
+(5)​   ['MANOLIS', 'ADAM', 'NIKOS', 'ANNA']
+
+
+
+
+Β3.
+for i in range(1,4,1):
+    for j in range(5,0,-1):
+        print i,j
+
+
+
+
+2
+                 ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΣ Η/Υ - ΕΠΑ.Λ.
+
+ΘΕΜΑ Γ
+
+fp=open('reuslts.txt', 'w')
+on=raw_input('ΔΩΣΕ ΟΝΟΜΑ ΔΙΑΓΩΝΙΖΟΜΕΝΟΥ: ')
+m7=0.0 #μετρά πόσοι είχαν βαθμολολογία <=7
+m=0.0 #μετρά όλους
+while on!='ΤΕΛΟΣ':
+    m+=1
+    s=0.0
+    for i in range(5):
+         b=int(input('ΔΩΣΕ ΒΑΘΜΟΛΟΓΙΑ: '))
+         s+=b
+    mo=s/5
+    print mo
+    if mo>7:
+         fp.write(on+'\n')
+    else:
+         m7+=1
+    on=raw_input('ΔΩΣΕ ΟΝΟΜΑ ΔΙΑΓΩΝΙΖΟΜΕΝΟΥ: ')
+fp.close()
+pos7=m7/m*100
+print pos7,'% είχαν βαθμολογία μικρότερη ή ίση του 7'
+
+
+
+
+3
+                      ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΣ Η/Υ - ΕΠΑ.Λ.
+
+ΘΕΜΑ Δ
+def MEGISTOS(S,T):
+    maxS=S[0]
+    maxPos=0
+    N=len(S)
+    for i in range(N):
+         if maxS>S[i]:
+             maxS=S[i]
+             maxPos=i
+    return T[maxPos]
+TITLES=[]
+SALES=[]
+for i in range(40):
+    t=raw_input('ΔΩΣΕ ΤΙΤΛΟ ΒΙΒΛΙΟΥ: ')
+    TITLES.append(t)
+    s=int(input('ΔΩΣΕ ΠΩΛΗΣΕΙΣ ΒΙΒΛΙΟΥ: '))
+    SALES.append(s)
+
+totalSales=0
+for i in range(40):
+    totalSales+=SALES[i]
+
+avgSales=totalSales/40.0
+print 'Συνολικές Πωλήσεις ', totalSales
+print 'Μέσος όρος πωλήσεων ', avgSales
+maxSalesTitle=MEGISTOS(SALES,TITLES)
+print 'Ο τίτλος του βιβλίου με τις περισσότερες πωλήσεις είναι',
+maxSalesTitle
+
+N=len(SALES)
+for i in range(N-1):
+    for j in range(N-1,i,-1):
+        if TITLES[j]<TITLES[j-1]:
+             TITLES[j],TITLES[j-1]=TITLES[j-1],TITLES[j]
+             SALES[j],SALES[j-1]=SALES[j-1],SALES[j]
+for i in range(40):
+    print TITLES[i], SALES[i]
+
+
+Επιμέλεια Απαντήσεων: ​
+Η Ομάδα του Ομίλου Ευκλείδη
+
+
+4
+

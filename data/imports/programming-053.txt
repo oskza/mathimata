@@ -1,0 +1,167 @@
+                        ΕΝΔΕΙΚΤΙΚΕΣ ΑΠΑΝΤΗΣΕΙΣ ΠΑΝΕΛΛΑΔΙΚΩΝ ΕΞΕΤΑΣΕΩΝ
+                     ΣΤΟ ΜΑΘΗΜΑ ΤΟΥ ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΥ ΥΠΟΛΟΓΙΣΤΩΝ - ΕΠΑΛ 2024
+
+
+
+
+                                            ΠΡΟΤΕΙΝΟΜΕΝΕΣ
+                                          ΑΠΑΝΤΗΣΕΙΣ ΘΕΜΑΤΩΝ
+
+
+   ΘΕΜΑ Α1
+
+   a) ΣΩΣΤΟ
+
+   b) ΛΑΘΟΣ
+
+   c) ΛΑΘΟΣ
+
+   d) ΛΑΘΟΣ
+
+   e) ΣΩΣΤΟ
+
+   ΘΕΜΑ Α2
+
+   1-β
+
+   2-στ
+
+   3-δ
+
+   4-γ
+
+   5-α
+
+
+
+   B1.
+
+   def trim_a(s1):
+
+           s2= ""
+
+           for ch in s1:
+
+                    if ch!='a' and ch!='A':
+
+                           s2=s2+ch
+
+
+ΣΕΛΙΔΑ 1
+
+                                                       https://www.eykleidisfrontistirio.gr/
+                        ΕΝΔΕΙΚΤΙΚΕΣ ΑΠΑΝΤΗΣΕΙΣ ΠΑΝΕΛΛΑΔΙΚΩΝ ΕΞΕΤΑΣΕΩΝ
+                     ΣΤΟ ΜΑΘΗΜΑ ΤΟΥ ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΥ ΥΠΟΛΟΓΙΣΤΩΝ - ΕΠΑΛ 2024
+
+           return s2
+
+
+
+
+   B2.
+
+   · Για τον αριθμό 85, οι συγκρίσεις είναι: 73, 181, 145, 98.
+
+   · Για τον αριθμό 12, οι συγκρίσεις είναι: 73, 29, 12.
+
+
+
+   B3
+
+   i=0
+
+   while i < 10:
+
+           j = 10
+
+           while j >= 0:
+
+           print(i * j)
+
+           j -= 1
+
+           i += 1
+
+
+
+
+   ΘΕΜΑ Γ
+   max=0
+   plithos=0 # πλήθος μαθητών
+   onoma=raw_input()
+   while onoma!='TEΛOΣ':
+      plithos=plithos+1
+      sum=0
+      pl_12=0
+   for i in range(10):
+      vathmos=int(input())
+ΣΕΛΙΔΑ 2
+
+                                                            https://www.eykleidisfrontistirio.gr/
+                   ΕΝΔΕΙΚΤΙΚΕΣ ΑΠΑΝΤΗΣΕΙΣ ΠΑΝΕΛΛΑΔΙΚΩΝ ΕΞΕΤΑΣΕΩΝ
+                ΣΤΟ ΜΑΘΗΜΑ ΤΟΥ ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΥ ΥΠΟΛΟΓΙΣΤΩΝ - ΕΠΑΛ 2024
+
+    while vathmos<1 or vathmos>20:
+       vathmos=int(input())
+       sum=sum+vathmos
+    if vathmos>=12:
+       pl_12=pl_12+1
+       mo=sum/10.0 # τελικός βαθμός
+    print mo
+    if mo>15 and pl_12==10:
+       print 'ΠΡΟΚΡΙΝΕΤΑΙ ΣΤΗΝ ΕΠΟΜΕΝΗ ΦΑΣΗ'
+    pl2=pl2+1 # πλήθος μαθητών που προκρίθηκαν
+    if mo>max:
+       max=mo
+       onoma=raw_input()
+   if pl2!=0:
+       pososto=float(pl2)/plithos *100
+       print max, pososto
+
+
+
+
+   while vathmos<1 or vathmos>20:
+       vathmos=int(input())
+       sum=sum+vathmos
+    if vathmos>=12:
+       pl_12=pl_12+1
+       mo=sum/10.0 # τελικός βαθμός
+    print mo
+    if mo>15 and pl_12==10:
+       print 'ΠΡΟΚΡΙΝΕΤΑΙ ΣΤΗΝ ΕΠΟΜΕΝΗ ΦΑΣΗ'
+    pl2=pl2+1 # πλήθος μαθητών που προκρίθηκαν
+    if mo>max:
+       max=mo
+       onoma=raw_input()
+   if pl2!=0:
+       pososto=float(pl2)/plithos *100
+       print max, pososto
+
+   for x in Synoliko_Poso:
+     if x>=mo:
+        plithos=plithos+1
+ΣΕΛΙΔΑ 3
+
+                                                 https://www.eykleidisfrontistirio.gr/
+                   ΕΝΔΕΙΚΤΙΚΕΣ ΑΠΑΝΤΗΣΕΙΣ ΠΑΝΕΛΛΑΔΙΚΩΝ ΕΞΕΤΑΣΕΩΝ
+                ΣΤΟ ΜΑΘΗΜΑ ΤΟΥ ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΥ ΥΠΟΛΟΓΙΣΤΩΝ - ΕΠΑΛ 2024
+
+   print plithos
+   N=len(Synoliko_Poso)
+     for i in range(N-1):
+        for j in range(N-1,i,-1):
+           if Synoliko_Poso[j]>Synoliko_Poso[j-1]:
+              Synoliko_Poso[j], Synoliko_Poso[j-1] = Synoliko_Poso[j-1], Synoliko_Poso[j]
+              ON[j], ON[j-1] = ON[j-1], ON[j]
+            elif Synoliko_Poso[j]==Synoliko_Poso[j-1]:
+              if ON[j]<ON[j-1]:
+                 ON[j], ON[j-1] = ON[j-1], ON[j]
+
+
+
+
+ΣΕΛΙΔΑ 4
+
+                                                    https://www.eykleidisfrontistirio.gr/
+

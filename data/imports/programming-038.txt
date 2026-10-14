@@ -1,0 +1,117 @@
+           ΕΝΔΕΙΚΤΙΚΕΣ ΑΠΑΝΤΗΣΕΙΣ ΣΤΑ ΘΕΜΑΤΑ ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΥ ΕΠΑΛ 2022
+                            Επιμέλεια: ΝΙΚΟΣ ΚΑΛΥΒΑΣ (ΠΕ86)
+
+ΘΕΜΑ Α
+Α1.
+α. ΛΑΘΟΣ
+β. ΣΩΣΤΟ
+γ. ΣΩΣΤΟ
+δ. ΛΑΘΟΣ
+ε. ΣΩΣΤΟ
+
+Α2.
+1.    ε
+2.    στ
+3.    γ
+4.    α
+5.    β
+
+
+
+ΘΕΜΑ Β
+Β1.
+‘ΔΩΔΕΚΑΝΗΣΑ’
+‘ΝΑΞΟΣ’
+‘ΚΥΚΛΑΔΕΣΝΑΞΟΣ’
+4
+
+B2.
+α)
+
+def tipose(self):
+    if self.vathmos>=10:
+        print 'ΠΡΟΑΓΕΤΑΙ'
+    else:
+        print 'ΠΑΡΑΠΕΜΠΕΤΑΙ'
+β.
+
+mathitis1=Mathitis(103,'ΝΙΚΟΛΑΟΥ',19)
+mathitis2=Mathitis(105,'ΓΕΩΡΓΙΟΥ',9)
+γ) mathitis1.tipose()
+
+δ) print (mathitis1.vathmos+mathitis2.vathmos)/2.0
+Β3.
+  1.   0
+  2.   word
+  3.   letter
+  4.   m
+  5.   1
+  6.   m
+
+
+
+ΘΕΜΑ Γ
+def ypologismos(tem):
+    if tem>=1 and tem<=3:
+        xr=tem*120
+    elif tem>=4 and tem<=6:
+        xr=3*120+(tem-3)*100
+    else:
+        xr=3*120+3*100+(tem-6)*70
+    return xr
+
+s=0 # Συνολικά έσοδα
+p=0   # πελατες με >10 τεμάχια
+for i in range(50):
+    a=int(input('Δώσε αριθμό τεμαχίων'))
+    k=ypologismos(a)
+    print 'Χρέωση:',k
+    s=s+k
+    if a>10:
+        p=p+1
+
+print 'Συνολικά έσοδα:',s
+pososto=(p/50.0)*100
+print 'Ποσοστό πελατών με >10 τεμάχια:',pososto
+ΘΕΜΑ Δ
+KOD=[]
+VATH=[]
+code=raw_input('Δώσε κωδικό:')
+while code!='ΤΕΛΟΣ':
+    vathmos=int(input('Δώσε βαθμό:'))
+    while vathmos<1 or vathmos>100:
+        vathmos=int(input('Δώσε βαθμό:'))
+    KOD.append(code)
+    VATH.append(vathmos)
+    code=raw_input('Δώσε κωδικό:')
+
+#-- 1oς τρόπος ---
+s=0.0
+for v in VATH:
+    s=s+v
+
+#-- 2oς τρόπος ---
+for i in range(len(VATH)):
+    s=s+VATH[i]
+
+mo=s/len(VATH)
+print 'O M.O είναι:',mo
+
+n=len(VATH)
+max=VATH[0]
+
+for i in range(n):
+    if VATH[i]>max:
+        max=VATH[i]
+for i in range(n):
+    if VATH[i]==max:
+        print KOD[i]
+
+f=open('epityxon.txt','w')
+p=1
+for i in range(n):
+    if VATH[i]>60:
+        f.write(str(p)+'.'+KOD[i]+'\n')
+        p=p+1
+f.close()
+

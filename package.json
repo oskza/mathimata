@@ -1,0 +1,19 @@
+{
+  "name": "epal-lessons-quiz",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Offline multi-course EPAL quiz with source-backed answer banks",
+  "scripts": {
+    "build:css": "tailwindcss -i styles/input.css -o styles/app.css --minify",
+    "build:data": "python3 scripts/build_data.py",
+    "test": "node --test tests/core.test.cjs && python3 tests/content.test.py",
+    "test:browser": "playwright test",
+    "serve": "python3 -m http.server 8080",
+    "package": "python3 scripts/package.py"
+  },
+  "devDependencies": {
+    "tailwindcss": "4.3.3",
+    "@tailwindcss/cli": "4.3.3",
+    "@playwright/test": "1.63.0"
+  }
+}

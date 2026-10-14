@@ -1,0 +1,88 @@
+ΣΥΝΟΠΤΙΚΕΣ ΑΠΑΝΤΗΣΕΙΣ:
+ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΣ ΕΠΑΛ
+10– 06 – 2025                                       Επιμέλεια απαντήσεων:
+                                                    Πίτος Δημήτρης
+ΘΕΜΑ Α                                              Ηλεκτρολόγος Μηχ. & Μηχ. Η/Υ
+
+Α1. 1.Σ             2.Σ   3.Λ          4.Λ          5.Σ
+
+Α2. 1.δ             2.γ   3.β          4. α         5. στ
+
+ΘΕΜΑ Β
+
+Β1.
+def max_poso(self):
+    L = self.poliseis
+    max = 0
+    for x in L:
+      if x > max:
+         max = x
+    return max
+
+politis1 = Politis("Ιωάννα Κωνσταντίνου",[10000,15000,5000,20000])
+z = politis1.max_poso()
+print z
+
+Β2.
+      1.   ""
+      2.   lexi
+      3.   arxika
+      4.   0
+      5.   arxika
+
+Β3.
+1. ΠΡΟΤΥΠΟ
+2. ΠΡΟΤΥΠΟ ΕΠΑΛ
+3. ΤΥΠΟ ΕΠΑ
+4. ΕΠΑΛ
+5. ΠΕ
+#ΘΕΜΑ Γ
+def YPOLOGISMOS(m):
+  return m*4
+s1 = 0.0
+sm = 0
+s = 0.0
+for i in range(5):
+  for k in range(4):
+     on = raw_input("Όνομα σχολείου: ")
+     t = raw_input("Τύπος σχολειου: ")
+     m = input("Μαθητές σχολειου: ")
+     while not(m >= 20 and m <= 50):
+        m = input("Μαθητές σχολειου: ")
+     if t == "ΠΕΠΑΛ":
+        s1 = s1 + m
+     sm = sm + m
+  kostos = YPOLOGISMOS(m)
+  print "Κόστος εισιτηρίων σχολειου: ",kostos
+  s = s + kostos
+print "Συνολικά έσοδα πλανητατίου: ",s
+pososto = (s1/sm)*100
+print "ποσοστό των ΠΕΠΑΛ μαθητών: ",pos,"%"
+
+#ΘΕΜΑ Δ
+ANS = ["a", "d", "b", "b","a", "c", "d", "a", "b", "c"]
+KOD = []
+SB = []
+for i in range(300):
+  kod = raw_input("Κωδικός υποψηφίου: ")
+  KOD.append(kod)
+  sb = 0
+  for j in range(10):
+     ap = raw_input("Απάντηση υποψηφίου: ")
+     if ap == ANS[j]:
+        sb = sb + 5
+  SB.append(sb)
+for i in range(300):
+  if SB[i] > 30:
+     print "Πάνω από 30 , υποψήφιος με κωδικό: ",KOD[i]
+for i in range(299):
+  for j in range(299,i,-1):
+     if SB[j] > SB[j-1]:
+        SB[j],SB[j-1] = SB[j-1],SB[j]
+        KOD[j],KOD[j-1] = KOD[j-1],KOD[j]
+x = open("lang.txt","w")
+for i in range(300):
+  y = KOD[i] + " " + str(SB[i]) + "\n"
+  x.write(y)
+x.close()
+

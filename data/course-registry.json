@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 2,
+  "sourceKinds": {
+    "exam": "Πανελλαδικές",
+    "workbook": "Τετράδιο ασκήσεων",
+    "custom": "Δικές μας ερωτήσεις"
+  },
+  "courses": [
+    {
+      "id": "networks",
+      "title": "Δίκτυα Υπολογιστών",
+      "specialtyIds": [
+        "informatics"
+      ],
+      "specialtyLabel": "Πληροφορική",
+      "grade": "Γ΄ ΕΠΑΛ",
+      "input": "data/courses/networks.json",
+      "script": "data/courses/networks.js",
+      "book": "assets/book.pdf",
+      "syllabusSource": "data/courses/networks-syllabus.md",
+      "extensions": []
+    },
+    {
+      "id": "programming",
+      "title": "Προγραμματισμός Υπολογιστών",
+      "specialtyIds": [
+        "informatics"
+      ],
+      "specialtyLabel": "Πληροφορική",
+      "grade": "Γ΄ ΕΠΑΛ",
+      "input": "data/courses/programming.json",
+      "script": "data/courses/programming.js",
+      "book": "assets/programming/book.pdf",
+      "syllabusSource": "data/courses/programming-syllabus.md",
+      "extensions": []
+    }
+  ],
+  "specialties": {
+    "informatics": "Πληροφορική"
+  }
+}

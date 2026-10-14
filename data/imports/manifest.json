@@ -1,0 +1,727 @@
+[
+  {
+    "subject": "networks",
+    "path": "Δικτυα Υπολογιστων - Γ ΕΠΑΛ/Δικτυα Υπολογιστων - Γ ΕΠΑΛ - Λυσεις Ερωτησεων Ασκησεων.pdf",
+    "text": "data/imports/networks-000.txt"
+  },
+  {
+    "subject": "networks",
+    "path": "Δικτυα Υπολογιστων - Γ ΕΠΑΛ/Δικτυα Υπολογιστων - Γ ΕΠΑΛ - Σημειωσεις Μαθητη.pdf",
+    "text": "data/imports/networks-001.txt"
+  },
+  {
+    "subject": "networks",
+    "path": "Δικτυα Υπολογιστων - Γ ΕΠΑΛ/Δικτυα Υπολογιστων - Γ ΕΠΑΛ - Τετραδιο Μαθητη.pdf",
+    "text": "data/imports/networks-002.txt"
+  },
+  {
+    "subject": "networks",
+    "path": "Δικτυα Υπολογιστων - Γ ΕΠΑΛ/θεματα/ανα ετος/2009/diktua_2009_epal.pdf",
+    "text": "data/imports/networks-003.txt"
+  },
+  {
+    "subject": "networks",
+    "path": "Δικτυα Υπολογιστων - Γ ΕΠΑΛ/θεματα/ανα ετος/2009/Απαντησεις/diktua_2009_ap2_epal.pdf",
+    "text": "data/imports/networks-004.txt"
+  },
+  {
+    "subject": "networks",
+    "path": "Δικτυα Υπολογιστων - Γ ΕΠΑΛ/θεματα/ανα ετος/2009/Απαντησεις/diktua_2009_ap_epal.pdf",
+    "text": "data/imports/networks-005.txt"
+  },
+  {
+    "subject": "networks",
+    "path": "Δικτυα Υπολογιστων - Γ ΕΠΑΛ/θεματα/ανα ετος/2010/diktua_2010_epal.pdf",
+    "text": "data/imports/networks-006.txt"
+  },
+  {
+    "subject": "networks",
+    "path": "Δικτυα Υπολογιστων - Γ ΕΠΑΛ/θεματα/ανα ετος/2010/Απαντησεις/diktua_2010_ap_epal.pdf",
+    "text": "data/imports/networks-007.txt"
+  },
+  {
+    "subject": "networks",
+    "path": "Δικτυα Υπολογιστων - Γ ΕΠΑΛ/θεματα/ανα ετος/2011/diktua_2011_epal.pdf",
+    "text": "data/imports/networks-008.txt"
+  },
+  {
+    "subject": "networks",
+    "path": "Δικτυα Υπολογιστων - Γ ΕΠΑΛ/θεματα/ανα ετος/2011/Απαντησεις/diktua_2011_ap_epal.pdf",
+    "text": "data/imports/networks-009.txt"
+  },
+  {
+    "subject": "networks",
+    "path": "Δικτυα Υπολογιστων - Γ ΕΠΑΛ/θεματα/ανα ετος/2012/diktua_2012_epal.pdf",
+    "text": "data/imports/networks-010.txt"
+  },
+  {
+    "subject": "networks",
+    "path": "Δικτυα Υπολογιστων - Γ ΕΠΑΛ/θεματα/ανα ετος/2012/Απαντησεις/diktua_2012_ap2_epal.pdf",
+    "text": "data/imports/networks-011.txt"
+  },
+  {
+    "subject": "networks",
+    "path": "Δικτυα Υπολογιστων - Γ ΕΠΑΛ/θεματα/ανα ετος/2012/Απαντησεις/diktua_2012_ap_epal.pdf",
+    "text": "data/imports/networks-012.txt"
+  },
+  {
+    "subject": "networks",
+    "path": "Δικτυα Υπολογιστων - Γ ΕΠΑΛ/θεματα/ανα ετος/2013/diktua_2013_epal.pdf",
+    "text": "data/imports/networks-013.txt"
+  },
+  {
+    "subject": "networks",
+    "path": "Δικτυα Υπολογιστων - Γ ΕΠΑΛ/θεματα/ανα ετος/2013/Απαντησεις/diktua_2013_ap_epal.pdf",
+    "text": "data/imports/networks-014.txt"
+  },
+  {
+    "subject": "networks",
+    "path": "Δικτυα Υπολογιστων - Γ ΕΠΑΛ/θεματα/ανα ετος/2014/them_dikt_epal_140613.pdf",
+    "text": "data/imports/networks-015.txt"
+  },
+  {
+    "subject": "networks",
+    "path": "Δικτυα Υπολογιστων - Γ ΕΠΑΛ/θεματα/ανα ετος/2014/Απαντησεις/them_dikt_epal_140613_apant.pdf",
+    "text": "data/imports/networks-016.txt"
+  },
+  {
+    "subject": "networks",
+    "path": "Δικτυα Υπολογιστων - Γ ΕΠΑΛ/θεματα/ανα ετος/2015/diktua_2015_epal_panellinies_net.pdf",
+    "text": "data/imports/networks-017.txt"
+  },
+  {
+    "subject": "networks",
+    "path": "Δικτυα Υπολογιστων - Γ ΕΠΑΛ/θεματα/ανα ετος/2015/Απαντησεις/diktua_2015_ap_epal_panellinies_net.pdf",
+    "text": "data/imports/networks-018.txt"
+  },
+  {
+    "subject": "networks",
+    "path": "Δικτυα Υπολογιστων - Γ ΕΠΑΛ/θεματα/ανα ετος/2016/diktua_2016_epal_panellinies_net.pdf",
+    "text": "data/imports/networks-019.txt"
+  },
+  {
+    "subject": "networks",
+    "path": "Δικτυα Υπολογιστων - Γ ΕΠΑΛ/θεματα/ανα ετος/2016/Απαντησεις/diktua_2016_ap2o_epal_panellinies_net.pdf",
+    "text": "data/imports/networks-020.txt"
+  },
+  {
+    "subject": "networks",
+    "path": "Δικτυα Υπολογιστων - Γ ΕΠΑΛ/θεματα/ανα ετος/2016/Απαντησεις/diktua_2016_ap3akd_epal_panellinies_net.pdf",
+    "text": "data/imports/networks-021.txt"
+  },
+  {
+    "subject": "networks",
+    "path": "Δικτυα Υπολογιστων - Γ ΕΠΑΛ/θεματα/ανα ετος/2016/Απαντησεις/diktua_2016_ap4steki_epal_panellinies_net.pdf",
+    "text": "data/imports/networks-022.txt"
+  },
+  {
+    "subject": "networks",
+    "path": "Δικτυα Υπολογιστων - Γ ΕΠΑΛ/θεματα/ανα ετος/2016/Απαντησεις/diktua_2016_ap_epal_panellinies_net.pdf",
+    "text": "data/imports/networks-023.txt"
+  },
+  {
+    "subject": "networks",
+    "path": "Δικτυα Υπολογιστων - Γ ΕΠΑΛ/θεματα/ανα ετος/2017/diktua_2017_epal_panellinies_net.pdf",
+    "text": "data/imports/networks-024.txt"
+  },
+  {
+    "subject": "networks",
+    "path": "Δικτυα Υπολογιστων - Γ ΕΠΑΛ/θεματα/ανα ετος/2017/Απαντησεις/diktua_2017_ap2_epal_panellinies_net.pdf",
+    "text": "data/imports/networks-025.txt"
+  },
+  {
+    "subject": "networks",
+    "path": "Δικτυα Υπολογιστων - Γ ΕΠΑΛ/θεματα/ανα ετος/2017/Απαντησεις/diktua_2017_ap3_epal_panellinies_net.pdf",
+    "text": "data/imports/networks-026.txt"
+  },
+  {
+    "subject": "networks",
+    "path": "Δικτυα Υπολογιστων - Γ ΕΠΑΛ/θεματα/ανα ετος/2017/Απαντησεις/diktua_2017_ap4_epal_panellinies_net.pdf",
+    "text": "data/imports/networks-027.txt"
+  },
+  {
+    "subject": "networks",
+    "path": "Δικτυα Υπολογιστων - Γ ΕΠΑΛ/θεματα/ανα ετος/2017/Απαντησεις/diktua_2017_ap_epal_panellinies_net.pdf",
+    "text": "data/imports/networks-028.txt"
+  },
+  {
+    "subject": "networks",
+    "path": "Δικτυα Υπολογιστων - Γ ΕΠΑΛ/θεματα/ανα ετος/2018/diktua_2018_epal_panellinies_net.pdf",
+    "text": "data/imports/networks-029.txt"
+  },
+  {
+    "subject": "networks",
+    "path": "Δικτυα Υπολογιστων - Γ ΕΠΑΛ/θεματα/ανα ετος/2018/Απαντησεις/diktua_2018_ap2_epal_panellinies_net.pdf",
+    "text": "data/imports/networks-030.txt"
+  },
+  {
+    "subject": "networks",
+    "path": "Δικτυα Υπολογιστων - Γ ΕΠΑΛ/θεματα/ανα ετος/2018/Απαντησεις/diktua_2018_ap3_epal_panellinies_net.pdf",
+    "text": "data/imports/networks-031.txt"
+  },
+  {
+    "subject": "networks",
+    "path": "Δικτυα Υπολογιστων - Γ ΕΠΑΛ/θεματα/ανα ετος/2018/Απαντησεις/diktua_2018_ap4_epal_panellinies_net.pdf",
+    "text": "data/imports/networks-032.txt"
+  },
+  {
+    "subject": "networks",
+    "path": "Δικτυα Υπολογιστων - Γ ΕΠΑΛ/θεματα/ανα ετος/2018/Απαντησεις/diktua_2018_ap_epal_panellinies_net.pdf",
+    "text": "data/imports/networks-033.txt"
+  },
+  {
+    "subject": "networks",
+    "path": "Δικτυα Υπολογιστων - Γ ΕΠΑΛ/θεματα/ανα ετος/2019/diktua_2019_epal_panellinies_net.pdf",
+    "text": "data/imports/networks-034.txt"
+  },
+  {
+    "subject": "networks",
+    "path": "Δικτυα Υπολογιστων - Γ ΕΠΑΛ/θεματα/ανα ετος/2019/Απαντησεις/diktua_2019_ap2_epal_panellinies_net.pdf",
+    "text": "data/imports/networks-035.txt"
+  },
+  {
+    "subject": "networks",
+    "path": "Δικτυα Υπολογιστων - Γ ΕΠΑΛ/θεματα/ανα ετος/2019/Απαντησεις/diktua_2019_ap3_epal_panellinies_net.pdf",
+    "text": "data/imports/networks-036.txt"
+  },
+  {
+    "subject": "networks",
+    "path": "Δικτυα Υπολογιστων - Γ ΕΠΑΛ/θεματα/ανα ετος/2019/Απαντησεις/diktua_2019_ap4_epal_panellinies_net.pdf",
+    "text": "data/imports/networks-037.txt"
+  },
+  {
+    "subject": "networks",
+    "path": "Δικτυα Υπολογιστων - Γ ΕΠΑΛ/θεματα/ανα ετος/2019/Απαντησεις/diktua_2019_ap_epal_panellinies_net.pdf",
+    "text": "data/imports/networks-038.txt"
+  },
+  {
+    "subject": "networks",
+    "path": "Δικτυα Υπολογιστων - Γ ΕΠΑΛ/θεματα/ανα ετος/2020/diktua_2020_epal_panellinies_net.pdf",
+    "text": "data/imports/networks-039.txt"
+  },
+  {
+    "subject": "networks",
+    "path": "Δικτυα Υπολογιστων - Γ ΕΠΑΛ/θεματα/ανα ετος/2020/Απαντησεις/diktua_2020_ap2_epal_panellinies_net.pdf",
+    "text": "data/imports/networks-040.txt"
+  },
+  {
+    "subject": "networks",
+    "path": "Δικτυα Υπολογιστων - Γ ΕΠΑΛ/θεματα/ανα ετος/2020/Απαντησεις/diktua_2020_ap3_epal_panellinies_net.pdf",
+    "text": "data/imports/networks-041.txt"
+  },
+  {
+    "subject": "networks",
+    "path": "Δικτυα Υπολογιστων - Γ ΕΠΑΛ/θεματα/ανα ετος/2020/Απαντησεις/diktua_2020_ap4_epal_panellinies_net.pdf",
+    "text": "data/imports/networks-042.txt"
+  },
+  {
+    "subject": "networks",
+    "path": "Δικτυα Υπολογιστων - Γ ΕΠΑΛ/θεματα/ανα ετος/2020/Απαντησεις/diktua_2020_ap_epal_panellinies_net.pdf",
+    "text": "data/imports/networks-043.txt"
+  },
+  {
+    "subject": "networks",
+    "path": "Δικτυα Υπολογιστων - Γ ΕΠΑΛ/θεματα/ανα ετος/2021/diktua_2021_epal_panellinies_net.pdf",
+    "text": "data/imports/networks-044.txt"
+  },
+  {
+    "subject": "networks",
+    "path": "Δικτυα Υπολογιστων - Γ ΕΠΑΛ/θεματα/ανα ετος/2021/Απαντησεις/diktua_2021_ap2_epal_panellinies_net.pdf",
+    "text": "data/imports/networks-045.txt"
+  },
+  {
+    "subject": "networks",
+    "path": "Δικτυα Υπολογιστων - Γ ΕΠΑΛ/θεματα/ανα ετος/2021/Απαντησεις/diktua_2021_ap3_epal_panellinies_net.pdf",
+    "text": "data/imports/networks-046.txt"
+  },
+  {
+    "subject": "networks",
+    "path": "Δικτυα Υπολογιστων - Γ ΕΠΑΛ/θεματα/ανα ετος/2021/Απαντησεις/diktua_2021_ap4_epal_panellinies_net.pdf",
+    "text": "data/imports/networks-047.txt"
+  },
+  {
+    "subject": "networks",
+    "path": "Δικτυα Υπολογιστων - Γ ΕΠΑΛ/θεματα/ανα ετος/2021/Απαντησεις/diktua_2021_ap_epal_panellinies_net.pdf",
+    "text": "data/imports/networks-048.txt"
+  },
+  {
+    "subject": "networks",
+    "path": "Δικτυα Υπολογιστων - Γ ΕΠΑΛ/θεματα/ανα ετος/2022/diktua_2022_epal.pdf",
+    "text": "data/imports/networks-049.txt"
+  },
+  {
+    "subject": "networks",
+    "path": "Δικτυα Υπολογιστων - Γ ΕΠΑΛ/θεματα/ανα ετος/2022/Απαντησεις/diktua_2022_ap2_epal.pdf",
+    "text": "data/imports/networks-050.txt"
+  },
+  {
+    "subject": "networks",
+    "path": "Δικτυα Υπολογιστων - Γ ΕΠΑΛ/θεματα/ανα ετος/2022/Απαντησεις/diktua_2022_ap3_epal.pdf",
+    "text": "data/imports/networks-051.txt"
+  },
+  {
+    "subject": "networks",
+    "path": "Δικτυα Υπολογιστων - Γ ΕΠΑΛ/θεματα/ανα ετος/2022/Απαντησεις/diktua_2022_ap4_epal.pdf",
+    "text": "data/imports/networks-052.txt"
+  },
+  {
+    "subject": "networks",
+    "path": "Δικτυα Υπολογιστων - Γ ΕΠΑΛ/θεματα/ανα ετος/2022/Απαντησεις/diktua_2022_ap_epal.pdf",
+    "text": "data/imports/networks-053.txt"
+  },
+  {
+    "subject": "networks",
+    "path": "Δικτυα Υπολογιστων - Γ ΕΠΑΛ/θεματα/ανα ετος/2023/diktua_2023_epal.pdf",
+    "text": "data/imports/networks-054.txt"
+  },
+  {
+    "subject": "networks",
+    "path": "Δικτυα Υπολογιστων - Γ ΕΠΑΛ/θεματα/ανα ετος/2023/Απαντησεις/diktua_2023_ap2_epal.pdf",
+    "text": "data/imports/networks-055.txt"
+  },
+  {
+    "subject": "networks",
+    "path": "Δικτυα Υπολογιστων - Γ ΕΠΑΛ/θεματα/ανα ετος/2023/Απαντησεις/diktua_2023_ap3_epal.pdf",
+    "text": "data/imports/networks-056.txt"
+  },
+  {
+    "subject": "networks",
+    "path": "Δικτυα Υπολογιστων - Γ ΕΠΑΛ/θεματα/ανα ετος/2023/Απαντησεις/diktua_2023_ap4_epal.pdf",
+    "text": "data/imports/networks-057.txt"
+  },
+  {
+    "subject": "networks",
+    "path": "Δικτυα Υπολογιστων - Γ ΕΠΑΛ/θεματα/ανα ετος/2023/Απαντησεις/diktua_2023_ap_epal.pdf",
+    "text": "data/imports/networks-058.txt"
+  },
+  {
+    "subject": "networks",
+    "path": "Δικτυα Υπολογιστων - Γ ΕΠΑΛ/θεματα/ανα ετος/2024/diktua_2024_epal.pdf",
+    "text": "data/imports/networks-059.txt"
+  },
+  {
+    "subject": "networks",
+    "path": "Δικτυα Υπολογιστων - Γ ΕΠΑΛ/θεματα/ανα ετος/2024/Απαντησεις/diktua_2024_ap11_epal.pdf",
+    "text": "data/imports/networks-060.txt"
+  },
+  {
+    "subject": "networks",
+    "path": "Δικτυα Υπολογιστων - Γ ΕΠΑΛ/θεματα/ανα ετος/2024/Απαντησεις/diktua_2024_ap222_epal.pdf",
+    "text": "data/imports/networks-061.txt"
+  },
+  {
+    "subject": "networks",
+    "path": "Δικτυα Υπολογιστων - Γ ΕΠΑΛ/θεματα/ανα ετος/2024/Απαντησεις/diktua_2024_ap4_epal.pdf",
+    "text": "data/imports/networks-062.txt"
+  },
+  {
+    "subject": "networks",
+    "path": "Δικτυα Υπολογιστων - Γ ΕΠΑΛ/θεματα/ανα ετος/2024/Απαντησεις/diktua_2024_ap5_epal.pdf",
+    "text": "data/imports/networks-063.txt"
+  },
+  {
+    "subject": "networks",
+    "path": "Δικτυα Υπολογιστων - Γ ΕΠΑΛ/θεματα/ανα ετος/2024/Απαντησεις/ΕΝΔΕΙΚΤΙΚΕΣ ΑΠΑΝΤΗΣΕΙΣ-ΕΠΑΛ-ΔΙΚΤΥΑ-3-6-2024.pdf",
+    "text": "data/imports/networks-064.txt"
+  },
+  {
+    "subject": "networks",
+    "path": "Δικτυα Υπολογιστων - Γ ΕΠΑΛ/θεματα/ανα ετος/2025/diktua_2025_epal.pdf",
+    "text": "data/imports/networks-065.txt"
+  },
+  {
+    "subject": "networks",
+    "path": "Δικτυα Υπολογιστων - Γ ΕΠΑΛ/θεματα/ανα ετος/2025/Απαντησεις/diktua_2025_ap2_epal.pdf",
+    "text": "data/imports/networks-066.txt"
+  },
+  {
+    "subject": "networks",
+    "path": "Δικτυα Υπολογιστων - Γ ΕΠΑΛ/θεματα/ανα ετος/2025/Απαντησεις/diktua_2025_ap3_epal.pdf",
+    "text": "data/imports/networks-067.txt"
+  },
+  {
+    "subject": "networks",
+    "path": "Δικτυα Υπολογιστων - Γ ΕΠΑΛ/θεματα/ανα ετος/2025/Απαντησεις/diktua_2025_ap4_epal.pdf",
+    "text": "data/imports/networks-068.txt"
+  },
+  {
+    "subject": "networks",
+    "path": "Δικτυα Υπολογιστων - Γ ΕΠΑΛ/θεματα/ανα ετος/2025/Απαντησεις/diktua_2025_ap51.pdf",
+    "text": "data/imports/networks-069.txt"
+  },
+  {
+    "subject": "networks",
+    "path": "Δικτυα Υπολογιστων - Γ ΕΠΑΛ/θεματα/ανα ετος/2025/Απαντησεις/diktua_2025_ap61.pdf",
+    "text": "data/imports/networks-070.txt"
+  },
+  {
+    "subject": "networks",
+    "path": "Δικτυα Υπολογιστων - Γ ΕΠΑΛ/θεματα/ανα ετος/2025/Απαντησεις/diktua_2025_ap71.pdf",
+    "text": "data/imports/networks-071.txt"
+  },
+  {
+    "subject": "networks",
+    "path": "Δικτυα Υπολογιστων - Γ ΕΠΑΛ/θεματα/ανα ετος/2025/Απαντησεις/diktua_2025_ap_epal.pdf",
+    "text": "data/imports/networks-072.txt"
+  },
+  {
+    "subject": "networks",
+    "path": "Δικτυα Υπολογιστων - Γ ΕΠΑΛ/θεματα/ανα ετος/2026/diktua_2026.pdf",
+    "text": "data/imports/networks-073.txt"
+  },
+  {
+    "subject": "networks",
+    "path": "Δικτυα Υπολογιστων - Γ ΕΠΑΛ/θεματα/ανα ετος/2026/Απαντησεις/diktua_2026_ap14.pdf",
+    "text": "data/imports/networks-074.txt"
+  },
+  {
+    "subject": "networks",
+    "path": "Δικτυα Υπολογιστων - Γ ΕΠΑΛ/θεματα/ανα ετος/2026/Απαντησεις/diktua_2026_ap21.pdf",
+    "text": "data/imports/networks-075.txt"
+  },
+  {
+    "subject": "networks",
+    "path": "Δικτυα Υπολογιστων - Γ ΕΠΑΛ/θεματα/ανα ετος/2026/Απαντησεις/diktua_2026_ap31.pdf",
+    "text": "data/imports/networks-076.txt"
+  },
+  {
+    "subject": "networks",
+    "path": "Δικτυα Υπολογιστων - Γ ΕΠΑΛ/θεματα/ανα ετος/2026/Απαντησεις/diktua_2026_ap41.pdf",
+    "text": "data/imports/networks-077.txt"
+  },
+  {
+    "subject": "networks",
+    "path": "Δικτυα Υπολογιστων - Γ ΕΠΑΛ/θεματα/ανα ετος/2026/Απαντησεις/diktua_2026_ap51.pdf",
+    "text": "data/imports/networks-078.txt"
+  },
+  {
+    "subject": "networks",
+    "path": "Δικτυα Υπολογιστων - Γ ΕΠΑΛ/θεματα/ανα ετος/2026/Απαντησεις/diktua_2026_ap61.pdf",
+    "text": "data/imports/networks-079.txt"
+  },
+  {
+    "subject": "networks",
+    "path": "Δικτυα Υπολογιστων - Γ ΕΠΑΛ/θεματα/ανα ετος/2026/Απαντησεις/diktua_2026_ap71.pdf",
+    "text": "data/imports/networks-080.txt"
+  },
+  {
+    "subject": "programming",
+    "path": "Προγραμματισμος Υπολογιστων - Γ ΕΠΑΛ/Προγραμματισμος Υπολογιστων - Γ ΕΠΑΛ - Διδακτικο Υλικο Μαθητη.pdf",
+    "text": "data/imports/programming-000.txt"
+  },
+  {
+    "subject": "programming",
+    "path": "Προγραμματισμος Υπολογιστων - Γ ΕΠΑΛ/Προγραμματισμος Υπολογιστων - Γ ΕΠΑΛ - Λυσεις Ασκησεων.pdf",
+    "text": "data/imports/programming-001.txt"
+  },
+  {
+    "subject": "programming",
+    "path": "Προγραμματισμος Υπολογιστων - Γ ΕΠΑΛ/Προγραμματισμος Υπολογιστων - Γ ΕΠΑΛ - Τετραδιο Εργασιων.pdf",
+    "text": "data/imports/programming-002.txt"
+  },
+  {
+    "subject": "programming",
+    "path": "Προγραμματισμος Υπολογιστων - Γ ΕΠΑΛ/θεματα/2017/programmatismos_2017_epal_panellinies_net.pdf",
+    "text": "data/imports/programming-016.txt"
+  },
+  {
+    "subject": "programming",
+    "path": "Προγραμματισμος Υπολογιστων - Γ ΕΠΑΛ/θεματα/2017/απαντησεις/programmatismos_2017_ap_epal_panellinies_net.pdf",
+    "text": "data/imports/programming-017.txt"
+  },
+  {
+    "subject": "programming",
+    "path": "Προγραμματισμος Υπολογιστων - Γ ΕΠΑΛ/θεματα/2018/programmatismos_2018_epal_panellinies_net.pdf",
+    "text": "data/imports/programming-018.txt"
+  },
+  {
+    "subject": "programming",
+    "path": "Προγραμματισμος Υπολογιστων - Γ ΕΠΑΛ/θεματα/2018/απαντησεις/programmatismos_2018_ap2_epal_panellinies_net.pdf",
+    "text": "data/imports/programming-019.txt"
+  },
+  {
+    "subject": "programming",
+    "path": "Προγραμματισμος Υπολογιστων - Γ ΕΠΑΛ/θεματα/2018/απαντησεις/programmatismos_2018_ap3_epal_panellinies_net.pdf",
+    "text": "data/imports/programming-020.txt"
+  },
+  {
+    "subject": "programming",
+    "path": "Προγραμματισμος Υπολογιστων - Γ ΕΠΑΛ/θεματα/2018/απαντησεις/programmatismos_2018_ap4_epal_panellinies_net.pdf",
+    "text": "data/imports/programming-021.txt"
+  },
+  {
+    "subject": "programming",
+    "path": "Προγραμματισμος Υπολογιστων - Γ ΕΠΑΛ/θεματα/2018/απαντησεις/programmatismos_2018_ap_epal_panellinies_net.pdf",
+    "text": "data/imports/programming-022.txt"
+  },
+  {
+    "subject": "programming",
+    "path": "Προγραμματισμος Υπολογιστων - Γ ΕΠΑΛ/θεματα/2019/programmatismos_2019_epal_panellinies_net.pdf",
+    "text": "data/imports/programming-023.txt"
+  },
+  {
+    "subject": "programming",
+    "path": "Προγραμματισμος Υπολογιστων - Γ ΕΠΑΛ/θεματα/2019/απαντησεις/programmatismos_2019_ap2_epal_panellinies_net.pdf",
+    "text": "data/imports/programming-024.txt"
+  },
+  {
+    "subject": "programming",
+    "path": "Προγραμματισμος Υπολογιστων - Γ ΕΠΑΛ/θεματα/2019/απαντησεις/programmatismos_2019_ap3_epal_panellinies_net.pdf",
+    "text": "data/imports/programming-025.txt"
+  },
+  {
+    "subject": "programming",
+    "path": "Προγραμματισμος Υπολογιστων - Γ ΕΠΑΛ/θεματα/2019/απαντησεις/programmatismos_2019_ap4_epal_panellinies_net.pdf",
+    "text": "data/imports/programming-026.txt"
+  },
+  {
+    "subject": "programming",
+    "path": "Προγραμματισμος Υπολογιστων - Γ ΕΠΑΛ/θεματα/2019/απαντησεις/programmatismos_2019_ap_epal_panellinies_net.pdf",
+    "text": "data/imports/programming-027.txt"
+  },
+  {
+    "subject": "programming",
+    "path": "Προγραμματισμος Υπολογιστων - Γ ΕΠΑΛ/θεματα/2020/programmatismos_2020_epal_panellinies_net.pdf",
+    "text": "data/imports/programming-028.txt"
+  },
+  {
+    "subject": "programming",
+    "path": "Προγραμματισμος Υπολογιστων - Γ ΕΠΑΛ/θεματα/2020/απαντησεις/programmatismos_2020_ap2_epal_panellinies_net.pdf",
+    "text": "data/imports/programming-029.txt"
+  },
+  {
+    "subject": "programming",
+    "path": "Προγραμματισμος Υπολογιστων - Γ ΕΠΑΛ/θεματα/2020/απαντησεις/programmatismos_2020_ap3_epal_panellinies_net.pdf",
+    "text": "data/imports/programming-030.txt"
+  },
+  {
+    "subject": "programming",
+    "path": "Προγραμματισμος Υπολογιστων - Γ ΕΠΑΛ/θεματα/2020/απαντησεις/programmatismos_2020_ap_epal_panellinies_net.pdf",
+    "text": "data/imports/programming-031.txt"
+  },
+  {
+    "subject": "programming",
+    "path": "Προγραμματισμος Υπολογιστων - Γ ΕΠΑΛ/θεματα/2021/programmatismos_2021_epal_panellinies_net.pdf",
+    "text": "data/imports/programming-032.txt"
+  },
+  {
+    "subject": "programming",
+    "path": "Προγραμματισμος Υπολογιστων - Γ ΕΠΑΛ/θεματα/2021/απαντησεις/programmatismos_2021_ap2_epal_panellinies_net.pdf",
+    "text": "data/imports/programming-033.txt"
+  },
+  {
+    "subject": "programming",
+    "path": "Προγραμματισμος Υπολογιστων - Γ ΕΠΑΛ/θεματα/2021/απαντησεις/programmatismos_2021_ap3_epal_panellinies_net.pdf",
+    "text": "data/imports/programming-034.txt"
+  },
+  {
+    "subject": "programming",
+    "path": "Προγραμματισμος Υπολογιστων - Γ ΕΠΑΛ/θεματα/2021/απαντησεις/programmatismos_2021_ap4_epal_panellinies_net.pdf",
+    "text": "data/imports/programming-035.txt"
+  },
+  {
+    "subject": "programming",
+    "path": "Προγραμματισμος Υπολογιστων - Γ ΕΠΑΛ/θεματα/2021/απαντησεις/programmatismos_2021_ap_epal_panellinies_net.pdf",
+    "text": "data/imports/programming-036.txt"
+  },
+  {
+    "subject": "programming",
+    "path": "Προγραμματισμος Υπολογιστων - Γ ΕΠΑΛ/θεματα/2022/programmatismos_2022_ap2_epal.pdf",
+    "text": "data/imports/programming-037.txt"
+  },
+  {
+    "subject": "programming",
+    "path": "Προγραμματισμος Υπολογιστων - Γ ΕΠΑΛ/θεματα/2022/programmatismos_2022_ap3_epal.pdf",
+    "text": "data/imports/programming-038.txt"
+  },
+  {
+    "subject": "programming",
+    "path": "Προγραμματισμος Υπολογιστων - Γ ΕΠΑΛ/θεματα/2022/programmatismos_2022_ap4_epal.pdf",
+    "text": "data/imports/programming-039.txt"
+  },
+  {
+    "subject": "programming",
+    "path": "Προγραμματισμος Υπολογιστων - Γ ΕΠΑΛ/θεματα/2022/programmatismos_2022_ap_epal.pdf",
+    "text": "data/imports/programming-040.txt"
+  },
+  {
+    "subject": "programming",
+    "path": "Προγραμματισμος Υπολογιστων - Γ ΕΠΑΛ/θεματα/2022/απαντησεις/programmatismos_2022_epal.pdf",
+    "text": "data/imports/programming-041.txt"
+  },
+  {
+    "subject": "programming",
+    "path": "Προγραμματισμος Υπολογιστων - Γ ΕΠΑΛ/θεματα/2023/programmatismos_2023_epal.pdf",
+    "text": "data/imports/programming-042.txt"
+  },
+  {
+    "subject": "programming",
+    "path": "Προγραμματισμος Υπολογιστων - Γ ΕΠΑΛ/θεματα/2023/απαντησεις/programmatismos_2023_ap2_epal.pdf",
+    "text": "data/imports/programming-043.txt"
+  },
+  {
+    "subject": "programming",
+    "path": "Προγραμματισμος Υπολογιστων - Γ ΕΠΑΛ/θεματα/2023/απαντησεις/programmatismos_2023_ap3_epal.pdf",
+    "text": "data/imports/programming-044.txt"
+  },
+  {
+    "subject": "programming",
+    "path": "Προγραμματισμος Υπολογιστων - Γ ΕΠΑΛ/θεματα/2023/απαντησεις/programmatismos_2023_ap4_epal.pdf",
+    "text": "data/imports/programming-045.txt"
+  },
+  {
+    "subject": "programming",
+    "path": "Προγραμματισμος Υπολογιστων - Γ ΕΠΑΛ/θεματα/2023/απαντησεις/programmatismos_2023_ap5_epal.pdf",
+    "text": "data/imports/programming-046.txt"
+  },
+  {
+    "subject": "programming",
+    "path": "Προγραμματισμος Υπολογιστων - Γ ΕΠΑΛ/θεματα/2023/απαντησεις/programmatismos_2023_ap6_epal.pdf",
+    "text": "data/imports/programming-047.txt"
+  },
+  {
+    "subject": "programming",
+    "path": "Προγραμματισμος Υπολογιστων - Γ ΕΠΑΛ/θεματα/2023/απαντησεις/programmatismos_2023_ap7_epal.pdf",
+    "text": "data/imports/programming-048.txt"
+  },
+  {
+    "subject": "programming",
+    "path": "Προγραμματισμος Υπολογιστων - Γ ΕΠΑΛ/θεματα/2023/απαντησεις/programmatismos_2023_ap_epal.pdf",
+    "text": "data/imports/programming-049.txt"
+  },
+  {
+    "subject": "programming",
+    "path": "Προγραμματισμος Υπολογιστων - Γ ΕΠΑΛ/θεματα/2024/programmatismos_2024_epal.pdf",
+    "text": "data/imports/programming-050.txt"
+  },
+  {
+    "subject": "programming",
+    "path": "Προγραμματισμος Υπολογιστων - Γ ΕΠΑΛ/θεματα/2024/απαντησεις/programmatismos_2024_ap12_epal.pdf",
+    "text": "data/imports/programming-051.txt"
+  },
+  {
+    "subject": "programming",
+    "path": "Προγραμματισμος Υπολογιστων - Γ ΕΠΑΛ/θεματα/2024/απαντησεις/programmatismos_2024_ap22_epal.pdf",
+    "text": "data/imports/programming-052.txt"
+  },
+  {
+    "subject": "programming",
+    "path": "Προγραμματισμος Υπολογιστων - Γ ΕΠΑΛ/θεματα/2024/απαντησεις/programmatismos_2024_ap32_epal.pdf",
+    "text": "data/imports/programming-053.txt"
+  },
+  {
+    "subject": "programming",
+    "path": "Προγραμματισμος Υπολογιστων - Γ ΕΠΑΛ/θεματα/2024/απαντησεις/programmatismos_2024_ap41_epal.pdf",
+    "text": "data/imports/programming-054.txt"
+  },
+  {
+    "subject": "programming",
+    "path": "Προγραμματισμος Υπολογιστων - Γ ΕΠΑΛ/θεματα/2024/απαντησεις/programmatismos_2024_ap52_epal.pdf",
+    "text": "data/imports/programming-055.txt"
+  },
+  {
+    "subject": "programming",
+    "path": "Προγραμματισμος Υπολογιστων - Γ ΕΠΑΛ/θεματα/2024/απαντησεις/programmatismos_2024_ap61_epal.pdf",
+    "text": "data/imports/programming-056.txt"
+  },
+  {
+    "subject": "programming",
+    "path": "Προγραμματισμος Υπολογιστων - Γ ΕΠΑΛ/θεματα/2024/απαντησεις/programmatismos_2024_ap7.pdf",
+    "text": "data/imports/programming-057.txt"
+  },
+  {
+    "subject": "programming",
+    "path": "Προγραμματισμος Υπολογιστων - Γ ΕΠΑΛ/θεματα/2025/programmatismos_2025_00.pdf",
+    "text": "data/imports/programming-058.txt"
+  },
+  {
+    "subject": "programming",
+    "path": "Προγραμματισμος Υπολογιστων - Γ ΕΠΑΛ/θεματα/2025/απαντησεις/programmatismos_2025_ap101.pdf",
+    "text": "data/imports/programming-059.txt"
+  },
+  {
+    "subject": "programming",
+    "path": "Προγραμματισμος Υπολογιστων - Γ ΕΠΑΛ/θεματα/2025/απαντησεις/programmatismos_2025_ap12.pdf",
+    "text": "data/imports/programming-060.txt"
+  },
+  {
+    "subject": "programming",
+    "path": "Προγραμματισμος Υπολογιστων - Γ ΕΠΑΛ/θεματα/2025/απαντησεις/programmatismos_2025_ap22.pdf",
+    "text": "data/imports/programming-061.txt"
+  },
+  {
+    "subject": "programming",
+    "path": "Προγραμματισμος Υπολογιστων - Γ ΕΠΑΛ/θεματα/2025/απαντησεις/programmatismos_2025_ap32.pdf",
+    "text": "data/imports/programming-062.txt"
+  },
+  {
+    "subject": "programming",
+    "path": "Προγραμματισμος Υπολογιστων - Γ ΕΠΑΛ/θεματα/2025/απαντησεις/programmatismos_2025_ap41.pdf",
+    "text": "data/imports/programming-063.txt"
+  },
+  {
+    "subject": "programming",
+    "path": "Προγραμματισμος Υπολογιστων - Γ ΕΠΑΛ/θεματα/2025/απαντησεις/programmatismos_2025_ap51.pdf",
+    "text": "data/imports/programming-064.txt"
+  },
+  {
+    "subject": "programming",
+    "path": "Προγραμματισμος Υπολογιστων - Γ ΕΠΑΛ/θεματα/2025/απαντησεις/programmatismos_2025_ap61.pdf",
+    "text": "data/imports/programming-065.txt"
+  },
+  {
+    "subject": "programming",
+    "path": "Προγραμματισμος Υπολογιστων - Γ ΕΠΑΛ/θεματα/2025/απαντησεις/programmatismos_2025_ap71.pdf",
+    "text": "data/imports/programming-066.txt"
+  },
+  {
+    "subject": "programming",
+    "path": "Προγραμματισμος Υπολογιστων - Γ ΕΠΑΛ/θεματα/2025/απαντησεις/programmatismos_2025_ap81.pdf",
+    "text": "data/imports/programming-067.txt"
+  },
+  {
+    "subject": "programming",
+    "path": "Προγραμματισμος Υπολογιστων - Γ ΕΠΑΛ/θεματα/2025/απαντησεις/programmatismos_2025_ap91.pdf",
+    "text": "data/imports/programming-068.txt"
+  },
+  {
+    "subject": "programming",
+    "path": "Προγραμματισμος Υπολογιστων - Γ ΕΠΑΛ/θεματα/2026/programmatismos_2026.pdf",
+    "text": "data/imports/programming-069.txt"
+  },
+  {
+    "subject": "programming",
+    "path": "Προγραμματισμος Υπολογιστων - Γ ΕΠΑΛ/θεματα/2026/απαντησεις/programmatismos_2026_ap12.pdf",
+    "text": "data/imports/programming-070.txt"
+  },
+  {
+    "subject": "programming",
+    "path": "Προγραμματισμος Υπολογιστων - Γ ΕΠΑΛ/θεματα/2026/απαντησεις/programmatismos_2026_ap22.pdf",
+    "text": "data/imports/programming-071.txt"
+  },
+  {
+    "subject": "programming",
+    "path": "Προγραμματισμος Υπολογιστων - Γ ΕΠΑΛ/θεματα/2026/απαντησεις/programmatismos_2026_ap33.pdf",
+    "text": "data/imports/programming-072.txt"
+  },
+  {
+    "subject": "programming",
+    "path": "Προγραμματισμος Υπολογιστων - Γ ΕΠΑΛ/θεματα/2026/απαντησεις/programmatismos_2026_ap41.pdf",
+    "text": "data/imports/programming-073.txt"
+  },
+  {
+    "subject": "programming",
+    "path": "Προγραμματισμος Υπολογιστων - Γ ΕΠΑΛ/θεματα/2026/απαντησεις/programmatismos_2026_ap51.pdf",
+    "text": "data/imports/programming-074.txt"
+  },
+  {
+    "subject": "programming",
+    "path": "Προγραμματισμος Υπολογιστων - Γ ΕΠΑΛ/θεματα/2026/απαντησεις/programmatismos_2026_ap61.pdf",
+    "text": "data/imports/programming-075.txt"
+  },
+  {
+    "subject": "programming",
+    "path": "Προγραμματισμος Υπολογιστων - Γ ΕΠΑΛ/θεματα/2026/απαντησεις/programmatismos_2026_ap71.pdf",
+    "text": "data/imports/programming-076.txt"
+  }
+]

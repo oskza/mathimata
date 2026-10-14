@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#243be8">
+  <meta name="description" content="Εξάσκηση σε μαθήματα ΕΠΑΛ με φίλτρα ύλης και τεκμηριωμένες απαντήσεις.">
+  <title>Μαθήματα / εξάσκηση ΕΠΑΛ</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles/app.css">
+  <script defer src="data/catalog.js"></script><script defer src="core.js"></script><script defer src="app.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Μετάβαση στο περιεχόμενο</a>
+<header class="site-header">
+  <div class="shell flex items-center justify-between gap-4">
+    <a class="brand" href="index.html" aria-label="Μαθήματα, αρχική σελίδα"><span class="brand-icon" aria-hidden="true">μ<span>·</span></span><span>μαθήματα<span class="brand-suffix">/ εξάσκηση</span></span></a>
+    <nav class="flex items-center gap-3" aria-label="Βασική πλοήγηση"><button class="nav-link" id="home-button">Η εξάσκησή μου</button><button class="nav-link" id="about-button">Πηγές & οδηγίες <span aria-hidden="true">↗</span></button></nav>
+  </div>
+</header>
+<main id="main" class="shell">
+  <section id="setup-view">
+    <div class="course-switcher panel">
+      <label class="field-label" for="specialty-filter">Τομέας / ειδικότητα<select id="specialty-filter" class="select-input"></select></label>
+      <label class="field-label" for="course-filter">Μάθημα<select id="course-filter" autocomplete="off" class="select-input"></select></label>
+      <p id="course-status" class="helper" role="status">Φόρτωση μαθημάτων…</p><button id="course-retry" class="button-secondary" type="button" hidden>Επανάληψη φόρτωσης</button>
+    </div>
+    <div class="hero">
+      <div><p class="eyebrow"><span class="status-dot"></span> Γ΄ ΕΠΑΛ · ΠΑΝΕΛΛΑΔΙΚΕΣ</p><h1>Μικρά βήματα.<br><span>Σίγουρες απαντήσεις.</span></h1><p class="hero-copy">Τα θέματα των εξετάσεων γίνονται η καθημερινή σου εξάσκηση.<br class="desktop-only"> Διάλεξε ύλη, απάντησε και μάθε από κάθε προσπάθεια.</p></div>
+      <div class="hero-art" aria-hidden="true"><svg viewBox="0 0 300 190"><path d="M30 95H90L150 35H265M90 95H210M150 35V155H265M210 95V155" fill="none" stroke="#bdc6eb" stroke-width="2"/><rect x="9" y="73" width="44" height="44" rx="13" fill="#243be8"/><path d="m23 95 8 8 15-17" fill="none" stroke="white" stroke-width="3"/><circle cx="150" cy="35" r="16" fill="#d6fa8e"/><circle cx="210" cy="95" r="24" fill="#243be8"/><text x="210" y="103" text-anchor="middle" fill="white" font-size="23" font-family="sans-serif">?</text><circle cx="265" cy="35" r="7" fill="#bdc6eb"/><circle cx="265" cy="155" r="7" fill="#bdc6eb"/><circle cx="150" cy="155" r="11" fill="white" stroke="#243be8" stroke-width="2"/><text x="32" y="150" fill="#66718d" font-size="12" font-family="monospace">LEARN. CONNECT. REPEAT.</text></svg></div>
+    </div>
+    <div class="stats-strip"><div><strong id="total-bank">—</strong><span>ερωτήσεις μαθήματος</span></div><div><strong id="total-years">—</strong><span>εξεταστικά έτη</span></div><div><strong id="total-chapters">—</strong><span>κεφάλαια βιβλίου</span></div><div><span class="small-dot"></span><span>Άμεση ανατροφοδότηση</span></div></div>
+    <div class="workspace">
+      <aside class="filter-panel panel" aria-label="Ρυθμίσεις εξάσκησης">
+        <div class="flex items-center justify-between"><h2 class="section-title">Φτιάξε το σετ σου</h2><button class="text-button" id="reset-filters">Επαναφορά</button></div>
+        <p class="muted text-sm mt-1 mb-5">Εσύ επιλέγεις πού θα εστιάσεις.</p>
+        <fieldset class="mode-field"><legend class="field-label">Τρόπος εξάσκησης</legend><div class="mode-options">
+          <label><input type="radio" name="mode" value="practice" checked><span>Ελεύθερη</span></label>
+          <label><input type="radio" name="mode" value="year"><span>Ανά έτος</span></label>
+          <label><input type="radio" name="mode" value="mistakes"><span>Τα λάθη μου <b id="mistake-count">0</b></span></label>
+        </div></fieldset>
+        <label class="field-label mt-5" for="year-filter">Εξεταστικό έτος</label><select id="year-filter" class="select-input"></select>
+        <p id="year-note" class="helper" hidden>Ολόκληρη η εξέταση, με την αρχική σειρά και όλα τα είδη ερωτήσεων.</p>
+        <label id="exam-picker" class="field-label mt-5" for="exam-filter" hidden>Εξέταση<select id="exam-filter" class="select-input"></select></label>
+        <fieldset id="topic-filters">
+          <legend class="sr-only">Φίλτρα εξεταστέας ύλης</legend>
+          <label class="toggle-row"><input id="syllabus-filter" type="checkbox"><span><strong>Μόνο εξεταστέα ύλη</strong><small>Σύμφωνα με το αρχείο ύλης του μαθήματος</small></span></label>
+          <div class="flex justify-between items-center mt-5"><span class="field-label mb-0">Κεφάλαια</span><button type="button" class="text-button" id="clear-chapters">Όλα</button></div>
+          <div id="chapter-filters" class="chapter-grid"></div>
+          <details class="paragraph-picker mt-4"><summary>Επιλογή παραγράφων <span id="paragraph-count">Όλες</span></summary><div class="paragraph-body"><label for="paragraph-search" class="sr-only">Αναζήτηση παραγράφου</label><input id="paragraph-search" class="text-input" placeholder="Αριθμός ή τίτλος παραγράφου"><button type="button" id="clear-paragraphs" class="text-button mt-2">Όλες οι παράγραφοι</button><div id="paragraph-filters"></div></div></details>
+          <fieldset class="mt-5"><legend class="field-label">Τύπος ερώτησης</legend><div id="type-filters" class="type-grid"></div></fieldset>
+        </fieldset>
+        <div id="practice-options" class="practice-options"><label class="field-label" for="question-count">Ερωτήσεις στο σετ<select id="question-count" class="select-input mt-2"><option value="10">10 ερωτήσεις</option><option value="20" selected>20 ερωτήσεις</option><option value="40">40 ερωτήσεις</option><option value="all">Όλες</option></select></label><label class="check-line"><input id="shuffle-filter" type="checkbox" checked> Τυχαία σειρά</label></div>
+      </aside>
+      <div class="setup-content">
+        <section class="start-card panel"><div class="flex items-start justify-between"><p class="eyebrow">ΤΟ ΕΠΟΜΕΝΟ ΣΟΥ ΒΗΜΑ</p><span class="pill" id="year-range"></span></div><h2>Έτοιμος για<br>λίγη εξάσκηση;</h2><p id="selection-description" class="muted">Ερωτήσεις από όλα τα κεφάλαια, με τη δική σου σειρά.</p><div class="selection-meter"><strong id="available-count" aria-live="polite">—</strong><span>διαθέσιμες ερωτήσεις<br><small id="session-size">20 στο επόμενο σετ</small></span></div><button id="start-button" class="button-primary start-button">Ξεκίνα την εξάσκηση <span aria-hidden="true">→</span></button><p id="empty-state" class="helper" hidden></p><p class="start-footnote">Χωρίς χρονόμετρο. Με χώρο να σκεφτείς.</p></section>
+        <div class="info-cards"><article class="mini-card"><span class="mini-icon" aria-hidden="true">✓</span><h3>Μάθε από την απάντηση</h3><p>Δες αμέσως τη διόρθωση και γύρισε στη σχετική παράγραφο του βιβλίου.</p></article><article class="mini-card"><span class="mini-icon lime" aria-hidden="true">↗</span><h3>Κράτα τον ρυθμό σου</h3><p>Στην ανάπτυξη, διάβασε την εκφώνηση και αποκάλυψε την ενδεικτική απάντηση όποτε θέλεις.</p></article></div>
+        <section class="coverage-card"><div class="flex justify-between items-center"><h3>Το σετ με μια ματιά</h3><span class="muted text-xs">Με τα τρέχοντα φίλτρα</span></div><div id="type-breakdown" class="breakdown"></div><p class="helper">Οι σύνθετες ασκήσεις διατηρούν τα κοινά δεδομένα τους. Η πρόοδος και τα λάθη κρατούνται όσο η σελίδα παραμένει ανοιχτή.</p></section>
+      </div>
+    </div>
+  </section>
+  <section id="quiz-view" hidden aria-label="Ενεργό quiz">
+    <div class="quiz-top"><button id="back-to-setup" class="text-button">← Ρυθμίσεις εξάσκησης</button><span id="session-label" class="pill"></span></div>
+    <div class="quiz-layout"><div class="quiz-main"><div class="progress-line"><span id="question-position"></span><span id="progress-percent"></span></div><div class="progress-track"><div id="progress-fill"></div></div>
+      <article id="question-card" class="question-card panel" tabindex="-1">
+        <div id="question-meta" class="flex flex-wrap gap-2 mb-4"></div><h1 id="question-title" class="question-heading"></h1><div id="question-sections" class="question-sections"></div><div id="question-prompt" class="question-prompt"></div><p id="question-note" class="notice" hidden></p><div id="question-figure"></div>
+        <form id="answer-form" novalidate><div id="answer-inputs"></div><p id="answer-error" class="error-text" role="alert"></p><button id="check-button" class="button-primary mt-4" type="submit">Έλεγχος απάντησης</button></form>
+        <button id="reveal-button" type="button" class="button-secondary mt-5">Εμφάνιση ενδεικτικής απάντησης</button>
+        <section id="feedback" class="feedback" aria-live="polite" hidden></section>
+        <details class="source-details"><summary>Πρωτότυπο θέμα & πηγές</summary><div id="question-sources"></div></details>
+      </article>
+      <div class="quiz-actions"><button id="previous-button" class="button-secondary">← Προηγούμενη</button><button id="finish-button" class="text-button">Ολοκλήρωση σετ</button><button id="next-button" class="button-primary">Επόμενη →</button></div>
+    </div><aside class="session-sidebar"><div class="panel session-panel"><p class="eyebrow">Η ΠΡΟΣΠΑΘΕΙΑ ΣΟΥ</p><div id="live-stats"></div><div class="divider"></div><h2 class="text-sm font-bold mb-3">Οι ερωτήσεις σου</h2><div id="question-navigation" class="question-navigation"></div><div class="nav-legend"><span><i class="legend-dot correct"></i>Σωστή</span><span><i class="legend-dot wrong"></i>Για επανάληψη</span><span><i class="legend-dot studied"></i>Μελετήθηκε</span></div></div><p class="helper mt-4">Η ανάπτυξη και οι ερωτήσεις με αμφίσημη παλιά διατύπωση δεν συμμετέχουν στη βαθμολογία.</p></aside></div>
+  </section>
+  <section id="results-view" class="results-view" hidden tabindex="-1"></section>
+</main>
+<footer class="shell site-footer"><span>μαθήματα / εξάσκηση</span><span>Ένα θέμα τη φορά.</span><a id="course-book" href="assets/book.pdf" target="_blank" rel="noopener">Το βιβλίο σου ↗</a></footer>
+<dialog id="about-dialog" class="about-dialog"><div class="flex justify-between items-center"><h2 class="section-title">Πηγές & τρόπος λειτουργίας</h2><button id="close-about" class="icon-button" aria-label="Κλείσιμο">×</button></div><div class="about-content"><div id="course-sources"></div><p>Στην ελεύθερη εξάσκηση τα φίλτρα συνδυάζονται. Η επιλογή «Ανά έτος» ανοίγει ολόκληρη τη συγκεκριμένη εξέταση. Η ανάπτυξη και η αποκάλυψη λύσης δεν βαθμολογούνται.</p><p>Τα λάθη διατηρούνται χωριστά ανά μάθημα για αυτή την επίσκεψη. Η αλλαγή μαθήματος ξεκινά νέο σετ. Η ανανέωση της σελίδας μηδενίζει την πρόοδο.</p><p>Η εφαρμογή λειτουργεί offline. Οι λύσεις είναι ενδεικτικές και παραπέμπουν στα παρεχόμενα αρχεία· δεν αποτελούν επίσημη βαθμολογία Πανελλαδικών.</p></div></dialog>
+<noscript><p class="noscript">Ενεργοποίησε τη JavaScript για να λειτουργήσει το quiz.</p></noscript>
+</body></html>

@@ -1,0 +1,102 @@
+                             ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΣ 2025 – Γ’ ΕΠΑΛ
+                      ΑΠΑΝΤΗΣΕΙΣ ΘΕΜΑΤΩΝ ΠΑΝΕΛΛΑΔΙΚΩΝ ΕΞΕΤΑΣΕΩΝ
+                   ΑΠΟΣΤΟΛΟΣ ΠΟΥΓΑΡΙΔΗΣ – ΚΑΘΗΓΗΤΗΣ ΠΛΗΡΟΦΟΡΙΚΗΣ ΠΕ86
+
+
+
+ΘΕΜΑ Α
+
+      Α1.                    Α2.
+
+  1. Σωστό                 1. δ
+  2. Σωστό                 2. γ
+  3. Λάθος                 3. β
+  4. Λάθος                 4. α
+  5. Σωστό                 5. στ
+
+
+ΘΕΜΑ Β
+B1.
+
+def max_poso(self):
+     maxp = -1
+     for i in range(4):
+             if self.poliseis[i] > maxp:
+                     maxp = self.poliseis[i]
+     return maxp
+
+politis1 = Politis(‘Ιωάννα Κωνσταντίνου’, [10000, 15000, 5000, 20000])
+megisto = politis1.max_poso()
+print megisto
+
+B2.
+
+             1. ‘ ‘
+             2. lexi
+             3. arxika
+             4. 0
+             5. arxika
+
+B3.
+             1. ΠΡΟΤΥΠΟ
+             2. ΠΡΟΤΥΠΟ ΕΠΑΛ
+             3. ΤΥΠΟ ΕΠΑ
+             4. ΠΑΛ
+             5. ΠΕ
+ΘΕΜΑ Γ
+
+def YPOLOGISMOS(plmath):
+
+           apot = plmath * 4.0
+
+           return apot
+
+
+synkost = 0
+smath = 0
+pl = 0
+for i in range(5):
+         for j in range(4):
+                 onοma = raw_input(‘ Δώστε όνομα σχολείου ….: ‘)
+                 typ = raw_input(' Δώστε τύπο σχολείου….:')
+                 plmath = int (input('Δώστε πλήθος μαθητών…….:’))
+                 while plmath < 20 or plmath > 50:
+                         plmath = int(input('Δώστε ξανά το πλήθος μαθητών:'))
+                 kostos = YPOLOGISMOS(plmath)
+                 print ‘ Kόστος εισιτηρίων σχολείου…..:’, kostos
+                 synkost = synkost + kostos
+                 smath = smath + plmath
+                 if typ == 'ΠΕΠΑΛ':
+                         pl = pl + plmath
+print 'Συνολικά έσοδα….: ',synkost
+pos = float(pl)/smath *100
+print ‘ Ποσοστό…..:, pos , ’%’
+ΘΕΜΑ Δ
+
+ANS = ['a', 'd', 'b', 'b', 'a', 'c', 'd', 'a', 'b', 'c']
+SB = []
+KOD = []
+for i in range(300):
+         kodikos = raw_input('Κωδικός υποψηφίου:')
+         KOD.append(kodikos)
+         syn = 0
+         for j in range(10):
+                  apant = raw_input('Δώσε απάντηση….:')
+                  if apant == ANS[j]:
+                            syn = syn +5
+                            SB.append(syn)
+
+for i in range(300):
+         if SB[i] > 30:
+                  print KOD[i]
+N = 300
+for i in range(N-1):
+         for j in range(N-1,i,-1):
+                  if SB[j] > SB[j-1]:
+                           SB[j], SB[j-1] = SB[j-1], SB[j]
+                           KOD[j], KOD[j-1] = KOD[j-1], KOD[j]
+file = open('lang.txt','w')
+for i in range(300):
+         file.write(KOD[i]+ ‘ ‘ +str(SB[i]) + ‘\n’)
+file.close()
+

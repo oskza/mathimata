@@ -1,0 +1,183 @@
+ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΣ
+  ΥΠΟΛΟΓΙΣΤΩΝ
+
+
+
+      13:00
+                     ΠΑΝΕΛΛΑΔΙΚΕΣ ΕΞΕΤΑΣΕΙΣ Γ΄ ΤΑΞΗΣ
+              ΗΜΕΡΗΣΙΩΝ – ΕΣΠΕΡΙΝΩΝ ΕΠΑΓΓΕΛΜΑΤΙΚΩΝ ΛΥΚΕΙΩΝ
+
+
+ΗΜΕΡΟΜΗΝΙΑ ΕΞΕΤΑΣΗΣ: 10/06/2025
+
+ΕΞΕΤΑΖΟΜΕΝΟ ΜΑΘΗΜΑ: ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΣ ΥΠΟΛΟΓΙΣΤΩΝ
+
+
+                           ΠΡΟΤΕΙΝΟΜΕΝΕΣ
+                        ΑΠΑΝΤΗΣΕΙΣ ΘΕΜΑΤΩΝ
+
+
+
+ΘΕΜΑ Α
+Α1.      α.    ΣΩΣΤΟ
+         β.    ΣΩΣΤΟ
+         γ.    ΛΑΘΟΣ
+         δ.    ΛΑΘΟΣ
+         ε.    ΣΩΣΤΟ
+
+
+Α2.      1.    δ
+         2.    γ
+         3.    β
+         4.    α
+         5.    στ
+
+
+
+                                                       Σελίδα 2 από 7
+ΘΕΜΑ Β
+Β1.       α)   def max_poso( self, poliseis ):
+                     max = -1
+                     for i in range( 4 ):
+                          if self.poliseis[ i ] > max:
+                                max = self.poliseis[ i ]
+                     return max
+
+
+          β)   politis1 = Politis( ……. )
+      ( ‘Ιωάννα Κωνσταντίνου’, [10000, 15000, 5000, 20000] )
+
+
+          γ)   print politis1.max_poso()
+
+
+B2.       (1) “ “
+          (2) lexi
+          (3) arxika
+          (4) 0
+          (5) arxika
+
+
+
+
+                                                           Σελίδα 3 από 7
+B3.       1. ΠΡΟΤΥΠΟ
+          2. ΠΡΟΤΥΠΟ ΕΠΑΛ
+          3. ΤΥΠΟ ΕΠΑ
+          4. ΕΠΑΛ
+          5. ΠΕ
+
+
+
+ΘΕΜΑ Γ
+#Γ3 def YPOLOGISMOS( pl_math ):
+                return pl_math*4
+
+
+sin_esoda = 0
+sin_math = 0
+pepal_math = 0
+
+
+#Γ1 for i in range( 5 ):
+
+
+          for j in range( 4 ):
+
+
+                onoma = raw_input( ‘ΔΩΣΕ ΟΝΟΜΑ’ )
+
+
+
+                                                    Σελίδα 4 από 7
+               typos = raw_input( ‘ΔΩΣΕ ΤΥΠΟ’ )
+
+
+               pl_math = int ( input ( ‘ΔΩΣΕ ΠΛΗΘΟΣ’ ) )
+               while pl_math < 20 or pl_math > 50:
+                   pl_math = int ( input ( ‘ΔΩΣΕ ΠΛΗΘΟΣ’ ) )
+
+
+#Γ2            cost = YPOLOGISMOS( pl_math )
+
+
+#Γ4 α)         sin_esoda += cost
+
+
+#Γ4 β)         sin_math += pl_math
+
+
+               if typos == ‘ΠΕΠΑΛ’
+                   pepal_math += pl_math
+
+
+      pos_pepal = ( pepal_math / sin_math ) * 100.0
+
+
+      print ‘ΣΥΝΟΛΙΚΑ ΕΣΟΔΑ’, sin_esoda
+      print ‘ΠΟΣΟΣΤΟ ΠΕΠΑΛ’, pos_pepal
+
+
+
+                                                      Σελίδα 5 από 7
+ΘΕΜΑ Δ
+#Δ1 ANS = [‘a’, ‘d’, ‘b’, ‘b’, ‘a’, ‘c’, ‘d’, ‘a’, ‘b’, ‘c’]
+
+
+      KOD = [ ]
+      SB = [ ]
+
+
+      for i in range( 300 ):
+
+
+#Δ1 α)      kodikos = raw_input( ‘ΔΩΣΕ ΚΩΔΙΚΟ’ )
+            KOD.append( kodikos )
+
+
+            bath = 0
+#Δ1 β)      for j in range( 10 ):
+                  apan = raw_input( ‘ΔΩΣΕ ΑΠΑΝΤΗΣΗ’ )
+
+
+                  if apan == ANS[ i ]:
+                        bath += 5
+
+
+            SB.append( bath )
+
+
+
+                                                               Σελίδα 6 από 7
+          if SB[ i ] > 30:
+               print KOD[ i ]
+
+
+#Δ3 α) for i in range( 299 ):
+
+
+          for j in range( 299, i, -1 ):
+
+
+               if SB[ j ] > SB[ j – 1 ]:
+
+
+                      SB[ j ], SB[ j – 1 ] = SB[ j – 1 ], SB[ j ]
+                      KOD[ j ], KOD[ j – 1 ] = KOD[ j - 1], KOD[ j ]
+
+
+#Δ3 β)    d = open(‘lang.txt, ‘w’)
+
+
+          for i in range( 300 ):
+
+
+               d.write( KOD[ i ] + ” “ + str( SB [ i ] ) + ‘\n’
+
+
+          d.close()
+
+
+
+                                                                Σελίδα 7 από 7
+

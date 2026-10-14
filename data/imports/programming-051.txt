@@ -1,0 +1,117 @@
+             ΕΝΔΕΙΚΤΙΚΕΣ ΑΠΑΝΤΗΣΕΙΣ ΠΑΝΕΛΛΑΔΙΚΩΝ ΕΞΕΤΑΣΕΩΝ
+       ΣΤΟ ΜΑΘΗΜΑ ΤΟΥ ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΥ ΥΠΟΛΟΓΙΣΤΩΝ - ΕΠΑΛ 2024
+                                   (Τρίτη 11-6-2024)
+                             επιμέλεια: ΝΙΚΟΣ ΚΑΛΥΒΑΣ
+
+ΘΕΜΑ Α.
+Α1.
+   α. ΣΩΣΤΟ
+   β. ΛΑΘΟΣ
+   γ. ΛΑΘΟΣ
+   δ. ΛΑΘΟΣ
+   ε. ΣΩΣΤΟ
+
+Α2.
+      1. β
+      2. στ
+      3. δ
+      4. γ
+      5. α
+
+ΘΕΜΑ Β.
+Β1
+        def trim_a(s1):
+            s2=''
+            for char in s1:
+                if char!='a' and char!='A':
+                    s2=s2+char
+            return s2
+
+
+Β2.
+       α) 73, 181, 145, 98
+       β) 73, 29, 12
+Β3.
+          i=0
+          while(i<10):
+              j=10:
+                  while j>-1:
+                       print i*j
+                       j=j-1
+              i=i+1
+
+
+ΘΕΜΑ Γ.
+
+max=0    # μέγιστη τελ. βαθμολογία
+p=0      # πλήθος μαθητών στο διαγωνισμό
+onoma=raw_input()
+while onoma!='TEΛOΣ':
+    p=p+1
+    s=0     # αθροισμα βαθμολογιών
+    p1=0    # πλήθος μαθημάτων με βαθμό >=12
+    for i in range(10):
+         vath=int(input())
+         while vath<1 or vath>20:
+             vath=int(input())
+         s=s+vath
+         if vath>=12:
+             p1=p1+1
+    mo=s/10.0 # τελικός βαθμός
+    print mo
+    if mo>15 and p1==10:
+         print 'ΠΡΟΚΡΙΝΕΤΑΙ ΣΤΗΝ ΕΠΟΜΕΝΗ ΦΑΣΗ'
+         p2=p2+1   # πλήθος μαθητών που προκρίθηκαν
+
+      if mo>max:
+          max=mo
+
+      onoma=raw_input()
+
+pososto=float(p2)/p *100    # ποσοστό προκρ. μαθητών
+print max, pososto
+
+# Δεν χρειαζεται έλεγχος του p λόγω εκφώνησης
+ΘΕΜΑ Δ.
+ON=[] # λίστα με ονοματα υποκ.
+f=open('branch.txt','r')
+for line in f:
+    ON.append(line)
+f.close()
+
+S_POSO=[] # λίστα με εισπρ. υποκ. για Ιούνιο
+for i in range(len(ON)):
+    s=0
+    for j in range(30):
+        eisp=float(input())
+        s=s+eisp
+    S_POSO.append(s)
+s1=0 # συνολικές εισπράξεις όλων των υποκατ.
+for x in S_POSO:
+    s1=s1+x
+
+''' 2oς τρόπος
+for i in range(len(S_POSO)):
+    s1=s1+S_POSO[i]
+'''
+
+mo=s1/len(S_POSO)   # M.O. εισπρ. υποκ.
+print mo
+
+p=0   # πλήθος υποκ. με εισπρ>=Μ.Ο.
+for x in S_POSO:
+    if x>=mo:
+        p=p+1
+print p
+
+N=len(S_POSO)
+
+for i in range(N-1):
+    for j in range(N-1,i,-1):
+        if S_POSO[j]>S_POSO[j-1]:
+            S_POSO[j], S_POSO[j-1] = S_POSO[j-1], S_POSO[j]
+            ON[j], ON[j-1] = ON[j-1], ON[j]
+        elif S_POSO[j]==S_POSO[j-1]:
+            if ON[j]<ON[j-1]:
+                ON[j], ON[j-1] = ON[j-1], ON[j]
+

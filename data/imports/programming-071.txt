@@ -1,0 +1,115 @@
+ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΣ
+  ΥΠΟΛΟΓΙΣΤΩΝ
+
+
+
+
+      11:20
+                          ΠΑΝΕΛΛΑΔΙΚΕΣ ΕΞΕΤΑΣΕΙΣ Γ΄ ΤΑΞΗΣ
+                  ΗΜΕΡΗΣΙΩΝ – ΕΣΠΕΡΙΝΩΝ ΕΠΑΓΓΕΛΜΑΤΙΚΩΝ ΛΥΚΕΙΩΝ
+
+
+ΗΜΕΡΟΜΗΝΙΑ ΕΞΕΤΑΣΗΣ: 6-6-2026
+
+ΕΞΕΤΑΖΟΜΕΝΟ ΜΑΘΗΜΑ: ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΣ ΥΠΟΛΟΓΙΣΤΩΝ
+
+
+                                 ΠΡΟΤΕΙΝΟΜΕΝΕΣ
+                             ΑΠΑΝΤΗΣΕΙΣ ΘΕΜΑΤΩΝ
+
+
+
+ΘΕΜΑ Α
+Α1.    α. Σωστό                            Α2.      1. γ
+       β. Λάθος                                     2. β
+       γ. Σωστό                                     3. α
+       δ. Λάθος                                     4. ε
+       ε. Σωστό                                     5. στ
+
+
+ΘΕΜΑ B
+
+Β1.   1. len(A)
+
+      2. N
+      3. A[j-1]
+      4. False
+      5. f
+
+B2.   1. ['MANOLIS', 'MARIA', 'NIKOS', 'LAZAROS']
+
+      2. ['MANOLIS', 'MARIA', 'NIKOS']
+      3. ['MANOLIS', 'MARIA', 'ADAM', 'NIKOS']
+      4. ['MANOLIS', 'ADAM', 'NIKOS']
+      5. ['MANOLIS', 'ADAM', 'NIKOS', 'ANNA']
+B3. for i in range (1,4,1):
+       for j in range (5, 0, -1):
+               print i, j
+
+
+ΘΕΜΑ Γ
+
+    fp = open (‘results.txt’, ‘w’)
+    pl = 0.0
+    plUnder7 = 0.0
+    on = raw_input (‘Δώσε όνομα διαγωνιζομένου’)
+    while on !=’ΤΕΛΟΣ’:
+       pl +=1
+       sum = 0.0
+       for i in range (5):
+             vath = int (input (‘Δώσε βαθμολογία διαγωνιζομένου΄))
+             sum += vath
+       mo = sum/5
+       print ‘Τελική βαθμολογία διαγωνιζομένου’, mo
+       if mo > 7:
+             fp.write(on + ‘\n’)
+       else:
+             plUnder7 +=1
+       on = raw_input (‘Δώσε όνομα διαγωνιζομένου’)
+    fp.close()
+    pos = plUnder7 / pl * 100
+    print ‘Ποσοστό διαγωνιζομένων με τελική βαθμολογία μικρότερη ή ίση από 7 μονάδες’, pos
+
+
+ΘΕΜΑ Δ
+
+    def MEGISTOS (S, T):
+       max = -1
+       N = len(S)
+       for i in range (N):
+             if S[i]>max:
+                   max = S[i]
+                   maxOn = T[i]
+       return maxOn
+#main
+TITLES = []
+SALES = []
+
+for i in range (40):
+   titlos = raw_input (‘Δώσε τον τίτλο του βιβλίου’)
+   TITLES.append(titlos)
+   pol = int (input(‘Δώσε τον αριθμό πωλήσεων του βιβλίου’))
+   while pol < 0:
+         pol = int (input(‘Λάθος τιμή! Δώσε ξανά τον αριθμό πωλήσεων του βιβλίου’))
+   SALES.append(pol)
+
+sum = 0.0
+for s in SALES:
+   sum += s
+mo = sum/40
+
+print ‘Συνολικές πωλήσεις’, sum
+print ‘Μέσος όρος πωλήσεων’, mo
+
+megTitle = MEGISTOS(SALES, TITLES)
+print ‘Ο τίτλος του βιβλίου με τις περισσότερες πωλήσεις είναι’, megTitle
+
+N = len(TITLES)
+for i in range (N-1):
+   for j in range (N-1, i, -1):
+         if TITLES[j-1]>TITLES[j]:
+               TITLES[j-1], TITLES[j] = TITLES[j], TITLES[j-1]
+               SALES[j-1], SALES[j] = SALES[j], SALES[j-1]
+for i in range (N):
+   print TITLES[i], SALES[i]
+

@@ -1,0 +1,117 @@
+                                                      ΠΑΝΕΛΛΑΔΙΚΕΣ ΕΞΕΤΑΣΕΙΣ 2025
+
+                    ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΣ ΥΠΟΛΟΓΙΣΤΩΝ
+                            ΕΙΔΙΚΟΤΗΤΑΣ
+                            ΑΠΑΝΤΗΣΕΙΣ
+
+ΘΕΜΑ Α
+
+Α1.
+        α. ΣΩΣΤΟ      β. ΣΩΣΤΟ       γ. ΛΑΘΟΣ    δ. ΛΑΘΟΣ      ε. ΣΩΣΤΟ
+
+Α2.
+     1) δ
+     2) γ
+     3) β
+     4) α
+     5) στ
+
+
+ΘΕΜΑ Β
+Β1. a)
+        def max_poso(self):
+               max = self.poliseis[0]
+               for x in self.poliseis:
+                       if x > max:
+                               max = x
+               return max
+
+β)      politis1 = Politis("Ιωάννα Κωνσταντίνου",[10000,15000,5000,20000])
+
+γ)      print(politis1.max_poso())
+
+Β2.
+        1) ‘’
+        2) lexi
+        3) arxika
+        4) 0
+        5) arxika
+
+Β3.
+        1. ΠΡΟΤΥΠΟ
+        2. ΠΡΟΤΥΠΟ ΕΠΑΛ
+        3. ΤΥΠΟ ΕΠΑ
+        4. ΕΠΑΛ
+        5. ΠΕ
+                                                    ΠΑΝΕΛΛΑΔΙΚΕΣ ΕΞΕΤΑΣΕΙΣ 2025
+
+ΘΕΜΑ Γ
+   #ΘΕΜΑ Γ
+   #Γ3
+   def YPOLOGISMOS(x):
+         return 4*x
+
+
+   #Γ1
+   SXOL = []
+   TYPOS = []
+   MATH = []
+   for i in range(5):
+            for j in range(4):
+                     SXOL.append(str(input('Δώσε όνομα σχολείου')))
+                     TYPOS.append(str(input('Δώσε τύπο σχολείου')))
+                     plithos = int(input('Δώσε πλήθος μαθητών'))
+                     while plithos < 20 or plithos > 50:
+                             plithos = int(input('Λάθος τιμή. Ξαναδώσε'))
+                     MATH.append(plithos)
+   #Γ2 και Γ4
+   Sum = 0
+   plithos = 0
+   Pl_PEPAL
+   for i in range(20):
+            COST = Ypologismos(MATH[i])
+            print('Το κόστος των εισιτηρίων του σχολείου είναι:',COST,'€')
+            Sum += COST
+            plithos += MATH[i]
+            if TYPOS[i] == 'ΠΕΠΑΛ':
+                     Pl_PEPAL += MATH[i]
+   print('Συνολικά έσοδα:',Sum,'€')
+   pososto = Pl_PEPAL/float(plithos)
+   print('Ποσοστό μαθητών ΠΕΠΑΛ:',pososto,'%')
+   #END
+
+ΘΕΜΑ Δ
+   #ΘΕΜΑ Δ
+   ANS = ['a', 'd', 'b', 'b', 'a', 'c', 'd', 'a', 'b', 'c']
+   #Δ1
+   KOD = []
+   SB = []
+   for i in range(300):
+            KOD.append(str(input('Δώσε κωδικό υποψηφίου')))
+            sum = 0
+            for j in range(10):
+                     apant = str(input('Δώσε απάντηση υποψηφίου'))
+                     if apant == ANS[j]:
+                               sum += 5
+                                                ΠΑΝΕΛΛΑΔΙΚΕΣ ΕΞΕΤΑΣΕΙΣ 2025
+
+         SB.append(sum)
+#Δ2
+for i in range(300):
+         if SB[i] > 30:
+                  print(KOD[i])
+#Δ3α
+for i in range(0,299,1):
+         for j in range(299,i,-1):
+                  if SB[j] > SB[j-1]:
+                          SB[j], SB[j-1] = SB[j-1], SB[j]
+                          KOD[j], KOD[j-1] = KOD[j-1], KOD[j]
+#Δ3β
+f = open('lang.txt','w')
+for i in range(300):
+         text = KOD[i] + " " + str(SB[i])
+         f.write(text + "\n")
+f.close()
+
+                  Οι παραπάνω λύσεις είναι ενδεικτικές
+

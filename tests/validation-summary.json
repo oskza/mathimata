@@ -1,0 +1,17 @@
+{
+  "verified": "2026-10-01",
+  "questions": 352,
+  "courses": 2,
+  "coreTests": 14,
+  "contentTests": 3,
+  "browserTests": 22,
+  "browserResult": "passed",
+  "archiveVerified": true,
+  "pascalExams": 0,
+  "formattedPrompts": 352,
+  "latestChangeChecks": {
+    "scope": "13 question-specific TCP/IP explanations",
+    "browserTests": 2,
+    "result": "passed"
+  }
+}

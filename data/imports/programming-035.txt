@@ -1,0 +1,239 @@
+                         ΠΑΝΕΛΛΑΔΙΚΕΣ ΕΞΕΤΑΣΕΙΣ
+                   Γ΄ ΤΑΞΗ ΗΜΕΡΗΣΙΟΥ ΓΕΝΙΚΟΥ ΛΥΚΕΙΟΥ
+                          Πέμπτη 24 Ιουνίου 2021
+                         ΕΞΕΤΑΖΟΜΕΝΟ ΜΑΘΗΜΑ:
+                     ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΣ ΥΠΟΛΟΓΙΣΤΩΝ
+
+
+                             (Ενδεικτικές Απαντήσεις)
+ΘΕΜΑ Α
+
+
+
+Α1.   α-ΣΩΣΤΟ          β-ΣΩΣΤΟ       γ-ΛΑΘΟΣ    δ-ΣΩΣΤΟ   ε-ΛΑΘΟΣ
+
+
+
+Α2.   1-δ    2-α       3-ε    4-στ   5-β
+
+
+
+
+ΘΕΜΑ Β
+
+
+
+Β1. α) εμφανίζονται στην οθόνη οι τιμές: 1,2,3,4,5,6
+
+
+
+β)    for x in range(1,7):
+
+             print x
+
+
+
+(εναλλακτικά)
+
+      for x in range(6):
+
+             print x+1
+
+
+
+                                           1
+B2.
+
+      AR = [2]
+
+      for i in range(1,10):
+
+             x = 2 * AR[i-1]
+
+             AR.append(x)
+
+
+
+B3.
+
+      a) pow(2,3) == 5+3
+
+             8 == 8
+
+             True
+
+
+
+      b) 2 == 5 or not(3>2)
+
+             False or not True
+
+             False or False
+
+             False
+
+
+
+      c) 13%15 ==3 + 4 *2
+
+             13 == 11
+
+             False
+
+
+
+ΘΕΜΑ Γ
+
+
+
+def TYPOS_EMB(age):
+
+      if age <= 50:
+
+             typos = 1
+
+      elif age <= 60:
+                                 2
+               typos = 2
+
+       elif age <= 70Q
+
+               typos = 3
+
+       else:
+
+               typos = 4
+
+
+
+       return typos
+
+
+
+max = -1
+
+plOLWN = 0
+
+plG = 0
+
+age = input(“dose tin hlikia”)
+
+while (age < 40):
+
+       fylo = raw_input(“dose to fylo”)
+
+       if fylo != “A” and fylo != “G”:
+
+               fylo = raw_input(“dose to fylo”)
+
+       amka = raw_input(“dose ton AMKA”)
+
+
+
+       t = TYPOS_EMB(age)
+
+      print “o asfalismenos me AMKA”, amka,“exei typo emvoliou me
+arithmo”,t
+
+
+
+       if age > max:
+
+               max = age
+
+               maxF = fylo
+
+               maxAMKA = amka
+
+
+
+                                          3
+       plOLWN = plOLWN + 1
+
+
+
+       if fylo == “G”:
+
+                plG = plG + 1
+
+
+       age = input(“dose tin hlikia”)
+
+
+pososto = plG/plOLWN*100
+
+print pososto
+
+print maxF,maxAMKA
+
+
+
+ΘΕΜΑ Δ
+
+
+
+OMADES = []
+
+BATHMOI = []
+
+for I in range(100):
+
+       omada = raw_input(“dose to onoma tis omadas”)
+
+       OMADES.append(onoma)
+
+       vathm = input(“dose tin vathmologia tis omadas”)
+
+       BATMHOI.append(vathm)
+
+
+
+PROK = []
+
+BATHPROK = []
+
+for I in range(100):
+
+       if BATHMOI[i] > 150:
+
+                PROK.append(OMADES[i])
+
+                BATHPROK.append(BATHMOI[i])
+
+
+                                        4
+N=len(PROK)
+
+for i in range(N-1):
+
+       for j in range(N-1,i,-1):
+
+              if BATHPROK[j] > BATHPROK[j-1]:
+
+                       PROK[j],PROK[j-1] = PROK[j-1],PROK[j-1]
+
+                       BATHPROK[j],BATHPROK[j-1] = BATHPROK[j-
+1],BATHPROK[j]
+
+              elif BATHPROK[j] == BATHPROK[j-1]:
+
+                       if PROK[j] < PROK[j-1]:
+
+                             PROK[j],PROK[j-1] = PROK[j-1],PROK[j-1]
+
+
+
+
+count = 0
+
+for i in range(N):
+
+       if BATHPROK[i] == BATHPROK[0]:
+
+              count = count + 1
+
+
+
+
+                                       5
+

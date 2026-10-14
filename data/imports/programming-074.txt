@@ -1,0 +1,172 @@
+ΘΕΜΑ Α
+
+Α1
+
+Α- ΣΩΣΤΟ
+
+Β- ΛΑΘΟΣ
+
+Γ- ΣΩΣΤΟ
+
+Δ-ΛΑΘΟΣ
+
+Ε- ΣΩΣΤΟ
+
+Α2
+
+1-γ, 2-β,-3-α, 4-ε, 5-στ
+
+ΘΕΜΑ Β
+
+Β1
+
+1-len(A)
+
+2-N
+
+3-A[j-1]
+
+4-false
+
+5-f
+
+
+
+B2
+
+(1) [‘MANOLIS’, ‘MARIA’, ‘NIKOS’, ‘LAZAROS’]
+
+(2) [‘MANOLIS’, ‘MARIA’, ‘NIKOS’]
+
+(3) [‘MANOLIS’, ‘MARIA’, ‘ADAM’, ‘NIKOS’]
+
+(4) [‘MANOLIS’, ‘ADAM’, ‘NIKOS’]
+
+(5) [‘MANOLIS’, ‘ADAM’, ‘NIKOS’, ‘ANNA’]
+
+
+
+B3
+
+for i in range(1,4):
+
+           for j in range(5,0,-1):
+
+                   print i,j
+ΘΕΜΑ Γ
+
+f.open(‘results.txt’, ‘a’)     #Γ3
+
+pl=0.0 # Γ4
+
+p7=0.0
+
+on =raw_input(‘onoma’)
+
+while on!= ‘TELOS’: # Γ1g
+
+         pl+=1 # Γ4
+
+         s=0.0 # Γ2
+
+         for i in range (5): # Γ1b
+
+                  vath=int(input(‘vathmos’))
+
+                  s+=vath # Γ2
+
+         mo=s/5 # Γ2
+
+         print ‘mesos oros’, mo # Γ2
+
+         if mo>7: # Γ3
+
+                  f.write(on)
+
+         else:
+
+                  p7+=1
+
+         on =raw_input(‘onoma’) # Γ1g
+
+f.close()   #Γ3
+
+pososto=p7/pl * 100 #Γ4
+
+print ‘pososto’, pososto #Γ4
+
+
+
+ΘΕΜΑ Δ
+
+def MEGISTOS(SALES, TITLES): #Δ3
+
+         maxt= TITLES[0]
+
+         maxs= SALES[0]
+
+         for I in range(40):
+
+                  if SALES[i]>maxs:
+
+                             maxs=SALES[i]
+
+                             maxt=TITLES[i]
+
+         return maxt
+TITLES=[ ]
+
+SALES=[ ]
+
+for i in range(40):
+
+        title=raw_input(‘dose titlo’)
+
+        TITLES.append(title)
+
+        pol=float(input(‘dose poliseis’))
+
+        while pol<0:
+
+                    pol=float(input(‘dose poliseos’))
+
+        SALES.append(pol)
+
+s=0.0
+
+for x in SALES:
+
+        s+=x
+
+print ‘synolo’, s
+
+mo=s/40
+
+print ‘mesos oros’, mo
+
+megis= MEGISTOS(SALES, TITLES)
+
+print ‘titlos bibliou me perissoteres poliseis ‘, megis
+
+
+
+n=les(SALES)
+
+for i in range(n-1)
+
+        for j in range (n-1, i, -1):
+
+                    if TITLES[j]< TITLES[j-1]:
+
+                            TITLES[j],TITLES[j-1]= if TITLES[j-1], TITLES[j]
+
+                            SALES [j], SALES [j-1]= SALES [j-1] SALES [j]
+
+print TITLES, SALES
+
+ή, β’ τρόπος
+
+for i in range(40):
+
+        print TITLES[i], SALES [i]
+

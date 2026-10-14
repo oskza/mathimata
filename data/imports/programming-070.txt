@@ -1,0 +1,138 @@
+                 ΠΡΟΤΕΙΝΟΜΕΝΕΣ ΑΠΑΝΤΗΣΕΙΣ ΠΑΝΕΛΛΑΔΙΚΩΝ
+                     ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΣ ΥΠΟΛΟΓΙΣΤΩΝ
+                            ΣΑΒΒΑΤΟ 6/6/2026
+                       Επιμέλεια: ΜΕΡΕΝΤΙΤΗΣ ΝΙΚΟΣ
+
+
+
+ΘΕΜΑ Α
+Α1
+α. Σωστό
+β. Λάθος
+γ. Σωστό
+δ. Λάθος
+ε. Σωστό
+Α2
+1→γ
+2→β
+3→α
+4→ε
+5 → στ
+
+
+ΘΕΜΑ Β
+Β1
+     1. len(A)
+     2. N
+     3. A[j-1]
+     4. False
+     5. f
+                                                         1
+Β2
+     1. ['MANOLIS', 'MARIA', 'NIKOS', 'LAZAROS']
+     2. ['MANOLIS', 'MARIA', 'NIKOS']
+     3. ['MANOLIS', 'MARIA', 'ADAM', 'NIKOS']
+     4. ['MANOLIS', 'ADAM', 'NIKOS']
+     5. ['MANOLIS', 'ADAM', 'NIKOS', 'ANNA']
+
+
+Β3
+
+for i in range(1, 4):
+  for j in range(5, 0, -1):
+      print i, j
+
+
+ΘΕΜΑ Γ
+
+#ερώτημα Γ3
+f = open('results.txt', 'w')
+pl = 0
+k=0
+# ερώτημα Γ1
+name = raw_input('Δώσε όνομα: ')
+while name != 'ΤΕΛΟΣ':
+   # ερώτημα Γ2
+   s=0
+   for i in range(5):
+     vathmos = int(input('Δώσε βαθμολογία: '))
+                                                   2
+      s = s + vathmos
+   mo = float(s) / 5
+   print mo
+   #ερώτημα Γ3
+   if mo > 7:
+      f.write(name + '\n')
+   else:
+       #ερώτημα Γ4
+       k=k+1
+   pl = pl + 1
+   name = raw_input('Δώσε όνομα: ')
+#ερώτημα Γ4
+pososto = (float(k)/pl)*100
+print pososto
+f.close()
+
+
+
+ΘΕΜΑ Δ
+
+#συνάρτηση για το ερώτημα Δ3
+def MEGISTOS(SALES, TITLES):
+  max_pol = SALES[0]
+  max_on = TITLES[0]
+  for i in range(1, len(SALES)):
+    if SALES[i] > max_pol:
+        max_pol = SALES[i]
+        max_on = TITLES[i]
+  return max_on
+                                      3
+TITLES = []
+SALES = []
+#ερώτημα Δ1
+for i in range(40):
+  title = raw_input('Δώσε τίτλο βιβλίου: ')
+  TITLES.append(title)
+
+  poliseis = int(raw_input('Δώσε αριθμό πωλήσεων: '))
+  while poliseis < 0:
+     poliseis = int(raw_input('Δώσε ξανά αριθμό πωλήσεων
+γιατί δεν ήταν σωστός: '))
+  SALES.append(poliseis)
+
+#ερώτημα Δ2
+athr = 0
+for i in range(40):
+  athr = athr + SALES[i]
+mo = float(athr) / 40
+print athr
+print mo
+
+#ερώτημα Δ3
+max_tit = MEGISTOS(SALES, TITLES)
+print 'Ο τίτλος του βιβλίου με τις περισσότερες πωλήσεις
+είναι: ', max_tit
+
+
+                                                           4
+#ερώτημα Δ4
+N = 40
+for i in range(N-1):
+  for j in range(N-1, i, -1):
+      if TITLES[j] < TITLES[j-1]:
+         temp = TITLES[j]
+         TITLES[j] = TITLES[j-1]
+         TITLES[j-1] = temp
+
+       temp2 = SALES[j]
+       SALES[j] = SALES[j-1]
+       SALES[j-1] = temp2
+
+for i in range(40):
+  print TITLES[i], SALES[i]
+
+
+
+
+                                    5
+

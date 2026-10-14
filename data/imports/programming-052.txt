@@ -1,0 +1,114 @@
+ΣΥΝΟΠΤΙΚΕΣ ΑΠΑΝΤΗΣΕΙΣ:
+ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΣ ΕΠΑΛ
+11– 06 – 2024                                          Επιμέλεια απαντήσεων:
+                                                       Πίτος Δημήτρης
+ΘΕΜΑ Α                                                 Ηλεκτρολόγος Μηχ. & Μηχ. Η/Υ
+
+Α1. 1.Σ       2.Λ          3.Λ           4.Λ           5.Σ
+
+Α2. 1.β       2.στ         3.δ           4. γ          5. α
+
+ΘΕΜΑ Β
+
+Β1.
+def trim_a(s1):
+  s2 = ""
+  for x in s1:
+     if x != "a" and x != "A":
+        s2 = s2 + x
+  return s2
+Β2.
+α) για τον αριθμό 85.
+    Σχόλια               First         Last            Mid           Οθόνη
+Αρχικές τιμές              0            9
+     1 επ:
+       η                   0            3                4             73
+     2η επ:                2            3                1            181
+     3η επ:                3            3                2            145
+     4 επ:
+       η                   4            3                3             98
+Σταματά γιατί επειδή first > last και άρα δεν υπάρχει το αναζητούμενο στοιχείο.
+β) για τον αριθμό 12.
+    Σχόλια               First         Last            Mid           Οθόνη
+Αρχικές τιμές              0            9
+     1 επ:
+       η                   5            9                4             73
+     2η επ:                8            9                7             29
+     3η επ:                                              8             12
+Σταματά γιατί βρίσκει το αναζητούμενο στοιχείο.
+
+Β3.
+i=0
+while i < 10:
+  j = 10
+  while j > -1:
+     print i*j
+     j=j-1
+  i=i+1
+ΘΕΜΑ Γ
+max = -1
+p=0
+p1 = 0
+on = raw_input("Όνομα διαγωνιζόμενου: ")
+while on != "ΤΕΛΟΣ":
+  d = True
+  s = 0.0
+  for i in range(10):
+     b = input("Βαθμός: ")
+     while not(b >= 1 and b <= 20):
+        b = input("Βαθμός: ")
+     if b < 12:
+        d = False
+     s=s+b
+  mo = s/10.0
+  print "Τελική βαθμολογία διαγωνιζόμενου: ",mo
+  p=p+1
+  if mo <= 15:
+     d = False
+  if d == True:
+     print "Ο διαγωνιζόμενος προκρίνεται στην επόμενη φάση"
+     p1 = p1 + 1
+  else:
+     print "Ο διαγωνιζόμενος δεν προκρίνεται στην επόμενη φάση"
+  if mo > max:
+     max = mo
+  on = raw_input("Όνομα διαγωνιζόμενου: ")
+print "Μεγαλύτερη τελική βαθμολογία: ",max
+pos = float(p1)/p * 100
+print "Ποσοστό διαγωνιζομένων που προκρίνονται: ",pos,"%"
+ΘΕΜΑ Δ
+
+ON = []
+x = open("branch.txt","r")
+for y in x:
+  word = y[0:len(y)-1]
+  ON.append(word)
+x.close()
+print ON
+S_POSO = []
+k = len(ON)
+for i in range(k):
+  s = 0.0
+  for j in range(30):
+     eis = input("Ημερήσια είσπραξη: ")
+     s = s + eis
+  S_POSO.append(s)
+s1 = 0.0
+for x in S_POSO:
+  s1 = s1 + x
+mo = s1/k
+print "ΜΟ εισπράξεων όλων των υποκαταστημάτων: ",mo
+p=0
+for x in S_POSO:
+  if x >= mo:
+     p=p+1
+print "Πλήθος υποκαταστημάτων με εισπράξεις μεγαλύτερες ή ίσες του ΜΟ: ",p
+for i in range(k-1):
+  for j in range(k-1,i,-1):
+     if S_POSO[j] > S_POSO[j-1]:
+        S_POSO[j],S_POSO[j-1]=S_POSO[j-1],S_POSO[j]
+        ON[j],ON[j-1]=ON[j-1],ON[j]
+     elif S_POSO[j] == S_POSO[j-1]:
+        if ON[j] < ON[j-1]:
+           ON[j],ON[j-1]=ON[j-1],ON[j]
+

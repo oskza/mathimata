@@ -1,0 +1,160 @@
+                 ΠΑΝΕΛΛΑΔΙΚΕΣ ΕΞΕΤΑΣΕΙΣ Γ΄ ΤΑΞΗΣ
+            ΗΜΕΡΗΣΙΩΝ ΕΠΑΓΓΕΛΜΑΤΙΚΩΝ ΛΥΚΕΙΩΝ
+
+
+ΗΜΕΡΟΜΗΝΙΑ ΕΞΕΤΑΣΗΣ:                      13 / 06 / 2017
+                                       ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΣ
+ΕΞΕΤΑΖΟΜΕΝΟ ΜΑΘΗΜΑ:
+                                       ΥΠΟΛΟΓΙΣΤΩΝ
+
+
+                          ΠΡΟΤΕΙΝΟΜΕΝΕΣ
+                      ΑΠΑΝΤΗΣΕΙΣ ΘΕΜΑΤΩΝ
+
+
+ΘΕΜΑ Α
+Α1. α. Σωστό β. Λάθος γ. Σωστό δ. Σωστό ε. Λάθος
+Α2.    1.στ 2. γ 3. δ 4. α 5. β
+Α3.
+α. 2 3 4 5 6 7 8 9
+β. 2 5 8
+γ. abcabc
+δ. 7
+ε. 8
+Α4. α. False β. True γ. True δ. True ε. False
+
+
+ΘΕΜΑ Β
+Β1. 1. Ν 2. 1 3. i -1      4. j 5. >
+
+
+
+
+Σελίδα 1 από 6
+B2.
+a=2 x=1
+a=6 x=3
+b=2
+B3.
+def SYN(x):
+      if x<10:
+          y=2*x
+      else:
+          y=3*x
+      return y
+
+
+B4.
+s=0
+i=1
+while i<10:
+      s=s + i
+      print s
+      i=i+2
+print s
+
+
+ΘΕΜΑ Γ
+fortiga=0
+
+                  Σελίδα 2 από 6
+epiv=0
+moto=0
+sf=0
+se=0
+sm=0
+meli=0
+mimeli=0
+# ερώτημα Γ1
+typos=raw_input(‘δώσε τύπο οχήματος’)
+while typos!= “TELOS”:
+   melos=raw_input(‘είναι μέλος;NAI/OXI’)
+   if melos==”NAI”:
+         meli=meli+1 # για ερώτημα Γ4
+         if typos==”F”:
+            fortiga=fortiga+1 # για ερώτημα Γ3
+            cost=70
+            sf=sf + cost # για ερώτημα Γ3
+         elif typos==”E”:
+           epiv=epiv+1 # για ερώτημα Γ3
+           cost=40
+           se=se + cost # για ερώτημα Γ3
+       else:
+           moto=moto+1 # για ερώτημα Γ3
+           cost=25
+
+
+Σελίδα 3 από 6
+           sm=sm + cost # για ερώτημα Γ3
+  else:
+     mimeli=mimeli+1 # για ερώτημα Γ4
+
+
+    if typos==”F”:
+       fortiga=fortiga+1 # για ερώτημα Γ3
+       cost=80
+       sf=sf + cost # για ερώτημα Γ3
+   elif typos==”E”:
+       epiv=epiv+1 # για ερώτημα Γ3
+       cost=50
+       se=se + cost # για ερώτημα Γ3
+   else:
+          moto=moto+1 # για ερώτημα Γ3
+          cost=30
+          sm=sm + cost # για ερώτημα Γ3
+ typos=raw_input(“δώσε τύπο οχήματος”)
+# Ερώτημα Γ2
+print(“Φορτηγά”, fortiga, sf )
+print (“Επιβατικά”, epiv, se)
+print (“Μοτοσυκλέτες”, moto, sm)
+# ερώτημα Γ3
+print (“ Πλήθος όλων”, fortiga + epiv+ moto)
+print(“ Συνολικό ποσό είσπραξης”, sf+se+sm)
+
+                                               Σελίδα 4 από 6
+# ερώτημα Γ4
+print(“Μέλη”, meli, “Μη μέλη”, mimeli)
+
+
+
+
+ΘΕΜΑ Δ
+
+
+VATHMOS=[]
+NAME=[]
+for i in range(50):
+ n=raw_input(“δώσε όνομα”)
+ NAME.append(n)
+ v=int(input(‘Δώσε βαθμό:’)
+ while v < 1 or v > 10 :
+   v=int(input(‘Δώστε ξανά βαθμό:’)
+ VATHMOS.append(v)
+# ερώτημα Δ2
+s=0.0
+for number in VATHMOS :
+ s= s + number
+mo=s / 50
+print(‘Μέσος όρος βαθμολογίας μαθητών:’, mo)
+# ερώτημα Δ3
+for i in range(50) :
+if VATHMOS[i] >= mo :
+
+
+Σελίδα 5 από 6
+ print(‘όνομα μαθητή:’, NAME[i], ‘Βαθμός:’, VATHMOS[i])
+# ερώτημα Δ4
+max=VATHMOS[0]
+for number in VATHMOS :
+ if number > max :
+  max=number
+print(‘Μεγαλύτερη βαθμολογία:’, max)
+for i in range(50) :
+if max = VATHMOS[i] :
+ print(‘Μαθητές με την μεγαλύτερη βαθμολογία:’, NAME[i])
+
+
+
+
+                                                          Σελίδα 6 από 6
+

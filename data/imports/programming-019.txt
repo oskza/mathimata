@@ -1,0 +1,183 @@
+                                ΠΑΝΕΛΛΑΔΙΚΕΣ ΕΞΕΤΑΣΕΙΣ
+
+           Γ΄ HMEΡΗΣΙΩΝ – Δ΄ ΕΣΠΕΡΙΝΩΝ – ΑΥΤΟΤΕΛΩΝ ΕΙΔΙΚΩΝ ΤΜΗΜΑΤΩΝ
+
+               & ΤΜΗΜΑΤΩΝ ΣΥΝΔΙΔΑΣΚΑΛΙΑΣ ΕΠΑΓΓΕΛΜΑΤΙΚΩΝ ΛΥΚΕΙΩΝ
+
+                                ΤΕΤΑΡΤΗ 20 ΙΟΥΝΙΟΥ 2018
+
+                                ΕΞΕΤΑΖΟΜΕΝΟ ΜΑΘΗΜΑ:
+
+                           ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΣ ΥΠΟΛΟΓΙΣΤΩΝ
+
+
+
+                                        ΑΠΑΝΤΗΣΕΙΣ
+
+ΘΕΜΑ Α
+
+Α1
+
+α. Σωστό
+
+β. Σωστό
+
+γ. Λάθος
+
+δ. Σωστό
+
+ε. Λάθος
+
+Α2
+
+α) Ο κατασκευαστής είναι : def __init__(self, marka, model):
+
+β)
+
+def __init__(self, marka, model, cpu_cores, cam_resolution):
+
+       self.marka=marka
+
+       self.model=model
+
+       self. cpu_cores = cpu_cores
+
+       cam_resolution = cam_resolution
+
+
+
+γ) phone1=Kinito("orange", "S3",4,10)
+ΘΕΜΑ B
+
+Β1.
+
+15      2
+15      6
+10      2
+10      6
+
+
+
+B2.
+
+α. 13 , 89, 96, 99
+β. 13, 2, 1
+
+Β3.
+
+
+ α.                  β.
+ (1) 20              (1) 1
+ (2) <=              (2) <=
+ (3) 100             (3) 5
+ (4) i               (4) i**2
+ (5) 20               (5) 1
+ΘΕΜΑ Γ
+
+
+
+GRAM=['Α', 'Β', 'Γ', 'Δ','Ε','Ζ','Η','Θ','Ι','Κ','Λ','Μ','Ν','Ξ','Ο','Π','Ρ','Σ','Τ','Υ','Φ','Χ','Ψ', 'Ω']
+
+#Γ1
+
+ep1= input('Δώστε επιγραφή 1')
+
+ep2= input('Δώστε επιγραφή 2')
+
+epig = ep1+ep2
+
+#Γ2
+
+SUMA =[]
+
+for i in range(24):
+
+  SUMA.append(0)
+
+#Γ3
+
+for w in epig:
+
+  i=0
+
+  while GRAM [i]!= w:
+
+      i =i+1
+
+  SUMA[i]= SUMA[i]+1
+
+#Γ4
+
+pl =0
+
+for i in range(24):
+
+  if SUMA[i]==0:
+
+      pl=pl+1
+
+  else:
+
+      print (GRAM[i], SUMA[i])
+
+print ('To πλήθος των γραμμάτων που έχουν μηδενικό πλήθος',pl)
+ΘΕΜΑ Δ
+
+POL=[]
+
+THER=[]
+
+inputfile = open("pth.txt","r")
+
+c=0
+
+for line in inputfile:
+
+  if c%2== 0:
+
+     POL.append(line)
+
+  else:
+
+     THER.append(line)
+
+  c=c+1
+
+
+
+inputfile.close()
+
+ath=0
+
+for th in THER:
+
+          ath=ath+int(th)
+
+mo=ath/len(THER)
+
+print ('Ο μέσος όρος όλων των πόλεων είναι:',mo )
+
+
+
+N = len( THER )
+
+for i in range( N - 1 ):
+
+  for j in range( N - 1 , i , -1 ):
+
+     if THER[ j ] > THER[ j-1 ] :
+
+        THER [ j ] , THER [ j-1 ] = THER [ j-1 ] , THER [ j ]
+
+        POL [ j ] , POL [ j-1 ] = POL [ j-1 ] , POL [ j ]
+
+
+
+print ('Η υψηλότερη θερμοκρασια είναι:', THER[0])
+
+for i in range(N):
+
+          if THER[i]==THER[0]:
+
+                    print (POL[i])
+

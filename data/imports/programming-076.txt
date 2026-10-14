@@ -1,0 +1,113 @@
+                  ΠΑΝΕΛΛΑΔΙΚΕΣ ΕΞΕΤΑΣΕΙΣ 2026
+         εξεταζόμενο μάθημα: ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΣ ΥΠΟΛΟΓΙΣΤΩΝ
+                                ΑΠΑΝΤΗΣΕΙΣ ΘΕΜΑΤΩΝ
+
+
+
+ΘΕΜΑ Α
+
+Α1.   α. Σωστό       β. Λάθος       γ. Σωστό   δ. Λάθος   ε. Σωστό
+
+Α2.   1 – γ 2 – β 3 – α 4 – ε 5 – στ
+
+ΘΕΜΑ Β
+                                                             ''
+Β1.   1 - len(A) 2 - N 3 - A[j-1] 4 - False 5 - f         Ο
+Β2.   1. ['MANOLIS', 'MARIA', 'NIKOS', 'LAZAROS']     ΝΙ Κ
+      2. ['MANOLIS', 'MARIA', 'NIKOS']
+      3. ['MANOLIS', 'MARIA', 'ADAM', 'NIKOS'] '' Τ
+      4. ['MANOLIS', 'ADAM', 'NIKOS']
+                                                   ΕΧ
+      5. ['MANOLIS', 'ADAM', 'NIKOS', 'ANNA']
+
+Β3.                ΡΟ
+                      ΝΤ
+      for i in range(1, 4):
+                        ΙΣ
+              for j in range(5, 0, -1):
+                          ΤΗ
+                      print i, j
+                            ΡΙ Ο
+ΘΕΜΑ Γ
+
+f = open('results.txt', 'w')
+               Φ
+pl = 0.0
+k = 0.0
+name = raw_input('Δώσε όνομα: ')
+while name != 'ΤΕΛΟΣ':
+       s = 0.0
+       for i in range(5):
+               vathmos = input('Δώσε βαθμολογία: ')
+               s = s + vathmos
+       mo = s/5.0
+       print mo
+       if mo > 7:
+               f.write(name + '\n')
+       if mo<=7:
+                k=k+1
+       pl = pl + 1
+       name = raw_input('Δώσε όνομα: ')
+
+pososto = k/pl*100
+print pososto
+f.close()
+
+ΘΕΜΑ Δ
+
+def MEGISTOS(SALES, TITLES):
+      max = -1
+      for i in range(len(SALES)):
+              if SALES[i] > max:
+                     max = SALES[i]
+                     max_on = TITLES[i]
+                                                                  ''
+      return max_on
+                                                               Ο
+                                                        ΝΙ Κ
+TITLES = []
+SALES = []                                    '' ΤΕΧ
+for i in range(40):
+        title = raw_input('Δώσε τίτλο βιβλίου: ')
+        poliseis = input('Δώσε αριθμό πωλήσεων: ')
+                      ΡΟ
+        while poliseis < 0:
+                         ΝΤ
+                poliseis = input('Δώσε αριθμό πωλήσεων: ')
+                           ΙΣ
+        TITLES.append(title)
+                             ΤΗ
+        SALES.append(poliseis)
+                               ΡΙ Ο
+sum = 0.0
+for i in range(40):
+        sum = sum + SALES[i]
+                Φ
+mo = sum/40.0
+print sum,mo
+
+max_titlos = MEGISTOS(SALES, TITLES)
+print 'Ο τίτλος του βιβλίου με τις περισσότερες πωλήσεις είναι: ', max_titlos
+
+for i in range(39):
+        for j in range(39, i, -1):
+                if TITLES[j] < TITLES[j-1]:
+                       TITLES[j],TITLES[j] = TITLES[j-1],TITLES[j-1]
+                       SALES[j],SALES[j] = SALES[j-1],SALES[j-1]
+
+for i in range(40):
+print TITLES[i], SALES[i]
+
+
+
+
+                                ''
+                               Ο
+                              ΝΙ Κ
+                            '' ΤΕΧ
+            ΡΟ
+               ΝΤ
+                 ΙΣΤΗ
+                     ΡΙ Ο
+        Φ
+

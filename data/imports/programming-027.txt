@@ -1,0 +1,115 @@
+ Προγραμματισμός Υπολογιστών ΕΠΑΛ 2019
+                                        Απαντήσεις
+ΘΕΜΑ Α
+
+Α1. Λ Σ Λ Σ Σ
+Α2. 1δ 2γ 3α 4β
+Α3.
+1 100
+23
+3'w'
+4write
+5str
+6close
+
+A4. γ
+
+
+
+ΘΕΜΑ Β
+
+Β1
+α) ΑΜ
+β) def perasa_mathima(self,p):
+       self.credits+=p
+γ) foititis1=Foititis(103,'Kvnstantinou',0)
+δ)foititis1.perasa_mathima(5)
+
+B2 1 55 34 5 2 2
+   1 2 55 34 5 2
+   1 2 2 55 34 5
+   1 2 2 5 55 34
+   1 2 2 5 34 55
+
+B3 το χ ειναι 100
+το τοπικο χ ειναι 2
+το χ ειναι ακομα 100
+
+
+
+ΘΕΜΑ Γ
+plithos =0
+Sum =0.0
+min_epidosi =200
+#Γ1
+
+for i in range(35):
+   onoma= raw_input(‘Δώστε ’)
+   prosp= 1
+   epidosi= input(‘Δώστε’)
+   while prosp <=4 and epidosi >180:
+        epidosi= input(‘Δώστε’)
+        prosp += 1
+#Γ2
+    print onoma
+    if epidosi<=180:
+         print epidosi
+         #Γ3
+         plithos+=1
+         Sum += epidosi
+     else:
+         print “ΜΗ ΣΥΜΜΕΤΟΧΗ”
+#Γ4
+  if epidosi<= min_epidosi or i==0:
+        min_epidosi = epidosi
+        min_onoma = onoma
+
+#Γ3
+print plithos
+print Sum/plithos
+#Γ4
+print min_onoma
+print min_epidosi
+
+
+
+ΘΕΜΑ Δ
+
+w=input("Plithos vagoniwn: ")
+v=input("Ogkos kivotiou: ")
+QUE=[]
+while v!=0:
+        QUE.append(v)
+        v=input("Ogkos kivotiou: ")
+
+l1=[] #synoliko varos kivotiwn gia kathe vagoni
+l2=[] #plithos kivotiwn gia kathe vagoni
+wagon=1
+while wagon<=w and QUE!=[]:
+        s=0;pl=0
+        kivotio=QUE[0]
+        while s+kivotio<=2000 and QUE!=[]:
+                QUE.pop(0)
+                s+=kivotio
+                pl+=1
+                if QUE!=[]:
+                        kivotio=QUE[0]
+        l1.append(s)
+        l2.append(pl)
+        wagon+=1
+for i in range(len(l1)):
+        print "To vagoni", i+1, "metefere", l2[i], "kivotia, synolikou
+varous", l1[i]
+if QUE==[]:
+        s=0
+        for i in range(len(l1)):
+                s=s+l1[i]
+        print "Xrisimopoihthikan", len(l1), "vagonia, ta opoia meteferan
+kivotia synolikou ogkou", s
+else:
+        s=0
+        for i in range(len(QUE)):
+                s+=QUE[i]
+        print "Paremeinan stin apothiki", len(QUE), "kivotia, synolikou
+ogkou", s
+

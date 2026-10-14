@@ -1,0 +1,119 @@
+                                                    ΠΑΝΕΛΛΑΔΙΚΕΣ ΕΞΕΤΑΣΕΙΣ 2024
+
+                   ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΣ ΥΠΟΛΟΓΙΣΤΩΝ
+                           ΕΙΔΙΚΟΤΗΤΑΣ
+                           ΑΠΑΝΤΗΣΕΙΣ
+
+ΘΕΜΑ Α
+
+Α1.
+       α. ΣΩΣΤΟ       β. ΛΑΘΟΣ        γ. ΛΑΘΟΣ   δ. ΛΑΘΟΣ   ε. ΣΩΣΤΟ
+
+Α2.
+   1) β
+   2) στ
+   3) δ
+   4) γ
+   5) α
+
+
+ΘΕΜΑ Β
+Β1.
+       def trim_a(s1):
+               s2=""
+               for char in s1:
+                       if char not in "aA":
+                               s2+=char
+               return s2
+
+Β2.
+α) 73, 181, 145, 98
+β) 73, 29, 12
+
+Β3.
+       i=0
+       while i<10:
+              j=10
+              while j>-1:
+                     print i*j
+                     j-=1
+              i+=1
+
+ΘΕΜΑ Γ
+       #ΘΕΜΑ Γ
+       Diagon=0
+       Prokr=0
+       max=0
+       ON=raw_input('Δώσε ονοματεπώνυμο')
+       while ON!='ΤΕΛΟΣ':
+                                                          ΠΑΝΕΛΛΑΔΙΚΕΣ ΕΞΕΤΑΣΕΙΣ 2024
+
+           Diagon+=1
+           EinaiKato12=FALSE
+           SUM=0
+           for i in range(10)
+                    grade=float(input('Δώσε βαθμολογία'))
+                    while grade<1 OR grade>20:
+                            grade=float(input('Λάθος! Ξαναδώσε βαθμολογία'))
+                    SUM+=grade
+                    if grade<12:
+                            EinaiKato12=TRUE
+           MO=SUM/10
+           print('Τελική βαθμολογία ',MO)
+           if MO>15 AND Not(EinaiKato12):
+                    print('Προκρίνεσαι στην επόμενη φάση!')
+                    Prokr+=1
+           if MO>max:
+                    max=MO
+           ON=raw_input('Δώσε επόμενο ονοματεπώνυμο')
+   print('Μεγαλύτερη τελική βαθμολογία: ',max)
+   POS=float(Prokr)/Diagon*100
+   print('Προκρίθηκε το ',POS,'%)
+   #END
+
+ΘΕΜΑ Δ
+   #ΘΕΜΑ Δ
+   #Δ1.
+   ON=[]
+   file=open("branch.txt","r")
+   for line in file:
+            ON.append(line)
+   file.close()
+   #Δ2.
+   N=len(ON)
+   S_POSO=[]
+   for branch in ON:
+            SUM=0
+            for i in range(30):
+                     eispr=float(input('Δώσε είσπραξη'))
+                     SUM+=eispr
+            S_POSO.append(SUM)
+   #Δ3.α
+   SUM=0
+   for poso in S_POSO:
+            SUM+=poso
+   MO=SUM/N
+   print('Μέσος όρος Ιουνίου: ',MO)
+   #Δ3.β
+   Plithos=0
+   for poso in S_POSO:
+            if poso>=MO:
+                                             ΠΑΝΕΛΛΑΔΙΚΕΣ ΕΞΕΤΑΣΕΙΣ 2024
+
+                  Plithos+=1
+print(Plithos,' είχαν εισπράξεις μεγαλύτερες ή ίσες του ΜΟ')
+#Δ4
+for in range(0,N-1,1):
+         for j in range(N-1,i,-1):
+                  if S_POSO[j]>S_POSO[j-1]:
+                         S_POSO[j], S_POSO[j-1]=S_POSO[j-1], S_POSO[j]
+                         ON[j], ON[j-1]=ON[j-1], ON[j]
+                  else:
+                         if S_POSO[j]==S_POSO[j-1]:
+                                 if ON[j]<ON[j-1]:
+                                        ON[j], ON[j-1]=ON[j-1], ON[j]
+#END
+
+
+                 Οι παραπάνω λύσεις είναι ενδεικτικές
+

@@ -1,0 +1,98 @@
+ΣΥΝΟΠΤΙΚΕΣ ΑΠΑΝΤΗΣΕΙΣ:
+ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΣ ΕΠΑΛ
+10– 06 – 2023                                            Επιμέλεια απαντήσεων:
+                                                                Πίτος Δημήτρης
+ΘΕΜΑ Α                                                    Ηλεκτρολόγος Μηχ. &
+Α1. 1.Σ        2.Λ           3.Λ           4.Σ    5.Σ        Μηχ. Υπολογιστών
+Α2. 1.β        2.α           3.στ          4. ε   5. γ
+ΘΕΜΑ Β
+Β1.
+α)
+def find_mo(self):
+     self.mo = (self.vath1+self.vath2)/2.0
+     return self.mo
+β)
+student1 = Student("Ιωάννου",7,6)
+student2 = Student("Αναστασίου",10,9)
+γ)
+if student1.find_mo() > student2.find_mo():
+   print student1.onoma
+elif student2.find_mo() > student1.find_mo():
+   print student2.onoma
+else:
+   print student1.onoma
+   print student2.onoma
+Β2.
+S=0
+for i in range(1,11,2):
+   S=S+i
+   print S
+
+Β3.
+A              7      8       3        4     -2
+1o πέρασμα     -2     7       8        3     4
+2o πέρασμα     -2     3       7        8     4
+3o πέρασμα     -2     3       4        7     8
+4o πέρασμα     -2     3       4        7     8
+
+ΘΕΜΑ Γ
+p=0
+x = open("thermo.txt","w")
+for i in range(10):
+  on = raw_input("Όνομα πόλης: ")
+  s = 0.0
+  for j in range(30):
+     th = input("Θερμοκρασία πόλης: ")
+     while not(th >= -50 and th <= 50):
+        th = input("Θερμοκρασία πόλης: ")
+     s = s + th
+  mo = s/30.0
+  print "Μέσος όρος θερμοκρασίας πόλης: ",mo
+  if mo < 0:
+     p=p+1
+  x.write(on+" "+str(mo)+"\n")
+x.close()
+print "Πλήθος πόλεων με μέσο όρο θερμοκρασίας μικρότερη του μηδενός: ",p
+
+
+ΘΕΜΑ Δ
+CODE =[]
+ESODA = []
+
+def anazitisi(key,CODE):
+  pos = -1
+  i=0
+  k = len(CODE)
+  while i < k and pos == -1:
+    if key == CODE[i]:
+       pos = i
+    else:
+       i=i+1
+  return pos
+
+code = raw_input("Δώσε κωδικό προιόντος: ")
+while code != "ΤΕΛΟΣ":
+   CODE.append(code)
+   timi = input("Δώσε τιμή πώλησης προιόντος: ")
+   tem = input("Δώσε πλήθος τεμαχίων που πουλήθηκαν: ")
+   esoda = timi*tem
+   ESODA.append(esoda)
+   code = raw_input("Δώσε κωδικό προιόντος: ")
+key = raw_input("Δώσε κωδικό προιόντος προς αναζήτηση: ")
+pos = anazitisi(key,CODE)
+if pos == -1:
+   print "Ο κωδικός δεν υπάρχει"
+else:
+   print "Έσοδα από πωλήσεις του αναζητούμενου προιόντος: ",ESODA[pos]
+s1 = 0.0
+s = 0.0
+for i in range(len(ESODA)):
+   x = CODE[i]
+   cd = x[0] + x[1]
+   s = s + ESODA[i]
+   if cd == "GR":
+      s1 = s1 + ESODA[i]
+print s , s1
+pos = (s1/s)*100
+print "Ποσοστό εσόδων ελληνικών προιόντων: ",pos,"%"
+

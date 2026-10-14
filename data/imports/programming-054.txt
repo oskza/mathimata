@@ -1,0 +1,147 @@
+Προγραμματισμός Υπολογιστών ΕΠΑ.Λ.
+
+
+
+
+             12:00
+                     ΠΑΝΕΛΛΑΔΙΚΕΣ ΕΞΕΤΑΣΕΙΣ Γ΄ ΤΑΞΗΣ
+              ΗΜΕΡΗΣΙΩΝ – ΕΣΠΕΡΙΝΩΝ ΕΠΑΓΓΕΛΜΑΤΙΚΩΝ ΛΥΚΕΙΩΝ
+
+
+ΗΜΕΡΟΜΗΝΙΑ ΕΞΕΤΑΣΗΣ:             11/06/2024
+
+ΕΞΕΤΑΖΟΜΕΝΟ ΜΑΘΗΜΑ:              Προγραμματισμός Υπολογιστών ΕΠΑ.Λ.
+
+
+                          ΠΡΟΤΕΙΝΟΜΕΝΕΣ
+                       ΑΠΑΝΤΗΣΕΙΣ ΘΕΜΑΤΩΝ
+
+
+
+
+ΘΕΜΑ Α
+
+
+Α1.
+α) Σωστό
+β) Λάθος
+γ) Λάθος
+δ) Λάθος
+ε) Σωστό
+
+
+Α2.
+      1) β
+      2) στ
+      3) δ
+      4) γ
+      5) α
+
+
+
+
+                                                            Σελίδα 2 από 5
+ΘΕΜΑ Β
+
+Β1.
+
+def trim_a(s1):
+        s2=’ ‘
+        for letter in s1:
+                 if letter!=’’A’’ and letter!=’’a’’ :
+                          s2+=letter
+        return s2
+
+
+B2.
+
+α) 73 181       145      98
+β) 73 29        12
+
+
+Β3.
+
+i=0
+while i < 10:
+        j=10
+        while j > -1:
+                print i*j
+                j= j-1
+        i= i+1
+
+
+
+
+                                                        Σελίδα 3 από 5
+ΘΕΜΑ Γ
+
+pl = 0.0
+plp = 0
+max = 0
+onoma = raw_input (‘Δώσε όνομα υποψηφίου’)
+while onoma != ‘ΤΕΛΟΣ’ :
+        pl+= 1
+        sum= 0.0
+        flag= True
+        for i in range (10):
+                 vathmos= input(‘Δώσε βαθμολογία’)
+                 while vathmos > 20 or vathmos < 1 :
+                         vathmos= input(‘Δώσε έγκυρη βαθμολογία’)
+                 sum+= vathmos
+                 if vathmos < 12:
+                         flag=False
+        mo=sum/10
+        print mo
+        if mo > 15 and flag= True:
+                 print ‘Προκρίνεσαι!’
+                 plp+= 1
+        if mo > max:
+                 max= mo
+        onoma = raw_input(‘Δώσε όνομα υποψηφίου’)
+print max
+pos= (plp/pl)*100
+print pos, ‘%’
+
+
+
+
+                                                                    Σελίδα 4 από 5
+ΘΕΜΑ Δ
+
+
+f= open(‘branch.txt’,’r’)
+ON= [ ]
+for line in f:
+         ON.append(line)
+f.close()
+N= len(ON)
+S_POSO= [ ]
+sum2= 0.0
+for i in range (N):
+         sum= 0.0
+         for j in range (30):
+                  eis= input (‘Δώσε ημερίσια είσπραξη’)
+                  sum+= eis
+         S_POSO.append(sum)
+         sum2+=sum
+mo = sum2 / N
+print mo
+counter = 0
+for i in S_POSO:
+         if i>= mo:
+                  counter+=1
+print counter
+for i in range (N-1):
+         for j in range (N-1, i, -1):
+                  if S_POSO[j] > S_POSO[j-1]:
+                          S_POSO[j], S_POSO[j-1] = S_POSO[j-1], S_POSO[j]
+                          ON[j], ON[j-1] = ON[j-1], ON[j]
+                  elif S_POSO[j]==S_POSO[j-1]:
+                          if ON[j] < ON[j-1]:
+                                  ON[j], ON[j-1] = ON[j-1], ON[j]
+
+
+
+
+                                                                            Σελίδα 5 από 5
+

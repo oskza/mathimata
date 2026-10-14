@@ -1,0 +1,158 @@
+                                                                   Άρης Κεσογλίδης
+
+                         ΠΑΝΕΛΛΑΔΙΚΕΣ ΕΞΕΤΑΣΕΙΣ
+              ΗΜΕΡΗΣΙΩΝ – ΕΣΠΕΡΙΝΩΝ ΕΠΑΓΓΕΛΜΑΤΙΚΩΝ ΛΥΚΕΙΩΝ
+                          ΣΑΒΒΑΤΟ 10 ΙΟΥΝΙΟΥ 2023
+                     ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΣ ΥΠΟΛΟΓΙΣΤΩΝ
+
+                                  ---ΑΠΑΝΤΗΣΕΙΣ---
+
+
+ΘΕΜΑ Α
+
+Α1.
+ α. Σωστό           β.   Λάθος          γ. Λάθος     δ.   Σωστό   ε. Σωστό
+
+
+Α2.
+1–β
+2–α
+3 – στ
+4–ε
+5–γ
+
+
+
+
+ΘΕΜΑ Β
+
+Β1.
+α) def find_mo(self) :
+      return (self.vath1 + self.vath2) / 2.0
+
+β)
+student1 = Student("Ιωάννου", 7, 6)
+student2 = Student("Αναστασίου", 10, 9)
+
+γ)
+mo1 = student1.find_mo()
+mo2 = student2.find_mo()
+if mo1 > mo2:
+   print student1.onoma
+elif mo1 < mo2:
+   print student2.onoma
+else:
+   print student1.onoma
+   print student2.onoma
+
+
+
+
+                                               -1-
+                                                                               Άρης Κεσογλίδης
+
+Β2.
+S= 0
+i= 1
+for i in range(1, 11, 2):
+  S= S+i
+  print S
+
+
+
+Β3.
+       Α             7      8       3       4   -2
+  1ο πέρασμα        -2      7       8       3    4
+  2ο πέρασμα        -2      3       7       8    4
+  3ο πέρασμα        -2      3       4       7    8
+  4ο πέρασμα        -2      3       4       7    8
+
+
+
+
+ΘΕΜΑ Γ
+
+pl = 0
+
+ON = []
+MO = []
+for i in range(10):
+  ON.append( raw_input("Δώσε όνομα πόλης : ") )
+  sumi = 0.0
+  print "Δώσε τις 30 θερμοκρασίες της πόλης"
+  for j in range(30):
+     x = input()
+     while x < -50 or x > 50:
+       x = input("Λάθος… Ξαναδώσε θερμοκρασία")
+     sumi = sumi + x
+  m = sumi / 30
+  MO.append( m )
+
+  if m < 0:
+     pl = pl + 1
+
+print "Πλήθος πόλεων με μέσο όρο θερμοκρασίας μικρότερη του μηδενός : " , pl
+
+f = open("thermo.txt", "w")
+
+for i in range(30):
+  f.write( ON[i] + ' ' + str( MO[i] ) + '\n')
+
+f.close()
+
+                                                -2-
+                                                                              Άρης Κεσογλίδης
+
+ΘΕΜΑ Δ
+
+ def anazitisi(k, CODE):                        def anazitisi(k, CODE):
+   for i in range( len(CODE) ):                   pos = -1
+     if CODE[i] == k:                             i= 0
+        return i                                  while pos = -1 and i < len(CODE):
+                                                    if CODE[i] == k:
+   return -1                                           pos = i
+                                                    else:
+                                                       i= i+1
+
+                                                    return pos
+
+
+CODE = []
+ESODA = []
+
+kp = raw_input( "Δώσε κωδικό προϊόντος" )
+while kp != "ΤΕΛΟΣ":
+  CODE.append(kp)
+  tim = input( "Δώσε τιμή" )
+  plt = input( "Δώσε πλήθος τεμαχίων" )
+
+  esp = plt*tim
+  ESODA.append( esp )
+  kp = raw_input( "Δώσε κωδικό προϊόντος" )
+
+
+x = raw_input( "Δώσε τον κωδικό ενός προϊόντος" )
+pos = anazitisi(x, CODE)
+
+if pos != -1:
+   print "Τα έσοδα από τις πωλήσεις του προϊόντος είναι : " , ESODA[pos]
+else:
+   print "Δεν υπάρχει προϊόν με αυτόν τον κωδικό"
+
+
+s = 0.0
+sum_el = 0.0
+for i in range( len(ESODA) ):
+   s = s + ESODA[i]
+   if CODE[i][:2] == "GR":
+      sum_el = sum_el + ESODA[i]
+
+pos = (sum_el / s) / 100.0
+
+print "Το ποσοστό των εσόδων των ελληνικών προϊόντων στο σύνολο είναι : " , pos , "%"
+
+
+
+
+                                              -3-
+

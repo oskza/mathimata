@@ -1,0 +1,107 @@
+ΣΥΝΟΠΤΙΚΕΣ ΑΠΑΝΤΗΣΕΙΣ:
+ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΣ ΕΠΑΛ
+27 – 06 – 2020
+
+ΘΕΜΑ Α                                                              Επιμέλεια απαντήσεων:
+                                                                           Πίτος Δημήτρης
+Α1. α.Σ          β.Λ             γ.Λ           δ.Σ        ε.Σ
+
+Α2. 1.καμμία              2. 5          3. 5
+
+Α3. 1. True      2. 2     3. 1   4. 1.232      5. False   6. True
+
+ΘΕΜΑ Β
+
+Β1.
+      1.   len(array)-1
+      2.   last
+      3.   -1
+      4.   pos
+      5.   last
+      6.   first
+      7.   mid + 1
+      8.   pos
+
+Β2.
+1. Το y είναι 2
+2. Το x είναι 30
+3. Το x είναι 6
+4. Το y είναι 3
+5. Το z είναι 9
+
+Β3.
+def find_gr(L):
+  k=len(L)
+  p=0
+  for i in L:
+     if '.gr' in i:
+        p=p+1
+  return p
+ΘΕΜΑ Γ
+
+def EISITIRIO(a,b):
+  cost = a*10 + b*5
+  return cost
+
+capacity = 500
+total = 0
+total_pe = 0
+total_pp = 0
+pe=input("Πλήθος ενήλικων παρέας: ")
+
+while pe != -1 :
+ pp = input("Πλήθος παιδιών παρέας: ")
+ if pp + pe > capacity:
+    pe = -1
+ if pe != -1:
+    z=EISITIRIO(pe,pp)
+    print "Συνολικό κόστος εισιτηρίων παρέας: ",z
+    capacity = capacity - pe - pp
+
+    total = total + z
+    total_pe = total_pe + pe
+    total_pp = total_pp + pp
+    pe=input("Πλήθος ενήλικων παρέας: ")
+
+pososto = float(total_pp)/(total_pe+total_pp) * 100
+
+print "Συνολικά έσοδα θεάτρου: ",total
+print "Ποσοστό παιδιών: ",pososto, "%"
+
+ΘΕΜΑ Δ
+LI = ["α","δ","γ","β","δ","γ","β","α","δ","γ","β","δ","γ","β","α"]
+SV = []
+ON = []
+
+for i in range(20):
+  on=raw_input("Όνομα υποψηφίου: ")
+  ON.append(on)
+  sv = 0
+  for k in range(15):
+     ap = raw_input("Απάντηση μαθητή: ")
+     if ap == LI[k]:
+        sv = sv + 3
+     elif ap != "ε" and ap != LI[k]:
+        sv = sv - 1
+  SV.append(sv)
+s = 0.0
+for x in SV:
+  s=s+x
+mo = s/20.0
+
+
+
+for i in range(20):
+  if SV[i] >= mo:
+     print ON[i]
+
+for i in range(19):
+  for j in range(19,i,-1):
+     if SV[j] > SV[j-1]:
+        SV[j],SV[j-1]=SV[j-1],SV[j]
+        ON[j],ON[j-1]=ON[j-1],ON[j]
+print "Οι μαθητές με τις 3 υψηλότερες βαθμολογίες είναι: "
+print ON[0]
+print ON[1]
+print ON[2]
+

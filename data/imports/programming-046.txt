@@ -1,0 +1,172 @@
+      ΕΞΕΤΑΖΟΜΕΝΟ ΜΑΘΗΜΑ ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΣ
+                   ΥΠΟΛΟΓΙΣΤΩΝ
+        ΠΡΟΤΕΙΝΟΜΕΝΕΣ ΑΠΑΝΤΗΣΕΙΣ ΘΕΜΑΤΩΝ
+
+
+Θέμα Α
+
+A1. 1. ΣΩΣΤΟ 2. ΛΑΘΟΣ 3. ΛΑΘΟΣ 4. ΣΩΣΤΟ 5. ΣΩΣΤΟ
+
+Α2. 1. β 2. α 3. στ 4. ε 5. γ
+Θέμα Β
+
+Β1.
+
+α) def find_mo(self):
+
+       return (self.vath1+self.vath2)/2.0
+
+β)
+
+student1=Student(‘IΩΑΝΝΟΥ’,7,6)
+
+student1=Student(‘ΑΝΑΣΤΑΣΙΟΥ’,10,9)
+
+γ)
+
+mo1=student1.find_mo()
+
+mo2=student2.find_mo()
+
+if mo1>mo2:
+
+       print student1.onoma,’μεγαλύτερος μέσος όρος’
+elif mo2>mo2:
+
+        print student2.onoma,’μεγαλύτερος μέσος όρος’
+
+else:
+
+        print student1.onoma print student2.onoma
+
+
+
+Β2.
+
+S=0
+
+For i in range(1,10,2):
+
+        S=S + i Print S
+
+
+
+Β3.
+
+              7           8    3         4          -2
+1 ο πέρασμα   -2          7    8         3          4
+2ο πέρασμα    -2          3    7         8          4
+3ο πέρασμα    -2          3    4         7          8
+4 ο πέρασμα   -2          3    4         7          8
+
+
+
+
+Θέμα Γ
+
+d=open(‘thermo.txt’,w)
+
+pl=0
+for i in range(10):
+
+      on=raw_input(‘Δώστε το όνομα της πόλης’)
+
+      s=0
+
+      for j in range(30):
+
+            therm=input(‘Δώστε θερμοκρασία’)
+
+            while therm < -50 or therm > 50:
+
+                    therm=input(‘Λάθος θερμοκρασία, δώστε
+            νέα’)
+
+            s=s+therm
+
+      mo=s/30.0
+
+      print mo
+
+      if mo<0:
+
+            pl=pl+1
+
+      d.write(on+’ ‘+str(mo)+’\n’)
+
+print pl
+
+d.close()
+
+Θέμα Δ
+
+def anazitisi(k,L):
+
+      pos=-1
+
+      N=len(L)
+
+      i=0
+
+      while i<N-1 and pos==-1:
+              if L[i]==k:
+
+                      pos=i
+
+              else:
+
+                      i+=1
+
+        return pos
+
+CODE=[]
+
+ESODA=[]
+
+kwd=raw_input(‘δώστε κωδικό’)
+
+while kwd!=’ΤΕΛΟΣ’:
+
+        CODE.append(kwd)
+
+        timi=input(‘δώστε τιμή’)
+
+        plithos=int(input(‘Πόσα τεμάχια πωλήθηκαν;’))
+
+        es=timi*plithos
+
+        ESODA.append(es)
+
+        kwd=raw_input(‘Δώστε νέο κωδικό’)
+
+N=len(CODE)
+
+k=raw_input(‘Δώστε τον κωδικό του προϊόντος που
+ψάχνετε’)
+
+pos=anazitisi(k,CODE)
+
+if pos==-1:
+
+        print ‘Δεν υπάρχει προϊόν με αυτόν τον κωδικό’
+
+else:
+       print ESODA[pos]
+
+pl=0
+
+for i in CODE:
+
+       if i[:2]==’GR’:
+
+             pl=pl+1
+
+pososto=pl/float(N)
+
+print pososto
+
+
+
+Σχόλιο: Τα θέματα        ήταν   για   καλά   προετοιμασμένους
+μαθητές.
+

@@ -1,0 +1,98 @@
+                          ΠΡΟΣΔΙΝΟΜΔΝΔ΢ ΑΠΑΝΣΗ΢ΔΙ΢
+                   ΠΡΟΓΡΑΜΜΑΣΙ΢ΜΟ΢ ΤΠΟΛΟΓΙ΢ΣΩΝ ΔΠΑΛ
+                                10 – 06 – 2025
+         ΜΔΡΔΝΣΙΣΗ΢ ΝΙΚΟΛΑΟ΢ – ΚΤΜΠΟΤΡΟΠΟΤΛΟΤ ΒΑ΢ΙΛΙΚΗ
+
+
+ΘΔΜΑ Α
+Α1.                             Α2.
+α. ΢ωζηό                        1. δ
+β. ΢ωζηό                        2. γ
+γ. Λάθος                        3. β
+δ. Λάθος                        4. α
+ε. ΢ωζηό                        5. ζη
+
+
+ΘΔΜΑ Β
+Β1.                             Β2.
+α) def max_poso(self):          1. “ “
+      megisto =                 2. lexi
+self.poliseis[0]                3. arxika
+      for i in self.poliseis:   4. 0
+         if i > megisto:        5. arxika
+             megisto = i
+      return megisto
+                              B3.
+β) politis1 = Politis("Ιωάννα   1. ΠΡΟΣΤΠΟ
+Κωνζηανηίνοσ", [10000,          2. ΠΡΟΣΤΠΟ ΕΠΑΛ
+15000, 5000, 20000])            3. ΣΤΠΟ ΕΠΑ
+                                4. ΕΠΑΛ
+γ) x = politis1.max_poso()      5. ΠΕ
+    print x
+
+
+
+ΘΔΜΑ Γ
+#ερωηημα Γ3
+def YPOLOGISMOS(pl_math):
+   cost = pl_math*4.0
+  return cost
+
+
+plithos_olon = 0 #ερωηημζ Γ4.β
+sum_esoda = 0 #ερωηημα Γ4.α
+for i in range(5): #gia kathe hmera
+  for j in range(4): #gia kathe sxoleio
+     onoma = raw_input('dvse to onoma toy sxoleioy:') #ερωηημα Γ1.α
+     typos = raw_input('dvse ton typo toy sxoleioy:') #ερωηημα Γ1.β
+     plithos_math = input('dvse to plithos mathiton:') #ερωηημα Γ1.β
+     while plithos_math < 20 or plithos_math > 50:
+          plithos_math = input('dvse pali to plithos mathiton:')
+     kostos = YPOLOGISMOS(plithos_math) #ερωηημα Γ2
+     print kostos
+     sum_esoda = sum_esoda + kostos #ερωηημα Γ4.α
+     plithos_olon = plithos_olon + plithos_math #ερωηημα Γ4.β
+     if j==1:
+          plithos_pepal = plithos_pepal + plithos_math #ερωηημα Γ4.β
+print sum_esoda #ερωηημα Γ4.α
+pososto = (plithos_pepal*1.0/plithos_olon)*100 #ερωηημα Γ4.β
+print pososto
+
+
+
+
+ΘΔΜΑ Γ
+
+
+ANS = ['a','d','b','b','a','c','d','a','b','c'] #ερώηημα Δ1.β
+SB = []
+KOD = []
+for i in range(300):       #ερώηημα Δ1.α
+  kodikos = raw_input('Dvse kvdiko:')
+  KOD.append(kodikos)
+  bath = 0
+  for j in range(10):      #ερώηημα Δ1.β
+     apant = raw_iput('dvse thn apanthsh soy sthn ervthsh')
+     if ANS[j] == apant:
+        bath = bath + 5
+  SB.append(bath) #ερώηημα Δ1.γ
+
+
+for i in range(300):    #ερώηημα Δ2
+  if SB[i] > 30:
+     print KOD[i]
+
+
+N = 300
+for i in range(N-1): #ερώηημα Δ3.α
+  for j in range(N-1,i,-1):
+     if SB[j] > SB[j-1]:
+        SB[j],SB[j-1] = SB[j-1],SB[j]
+        KOD[j],KOD[j-1] = KOD[j-1],KOD[j]
+
+
+f= open('lang.txt','w') #ερώηημα Δ3.β
+for i in range(300):
+  f.write(str(KOD[i]) + " " + str(SB[i]) + "\n")
+f.close()
+

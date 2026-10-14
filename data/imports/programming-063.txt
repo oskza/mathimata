@@ -1,0 +1,129 @@
+                             ΕΝΔΕΙΚΤΙΚΕΣ ΑΠΑΝΤΗΣΕΙΣ ΠΑΝΕΛΛΑΔΙΚΩΝ ΕΞΕΤΑΣΕΩΝ
+  ​          ​    ​       ΣΤΟ ΜΑΘΗΜΑ ΤΟΥ ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΥ ΥΠΟΛΟΓΙΣΤΩΝ - ΕΠΑΛ 2024
+
+
+
+
+                                          ΠΡΟΤΕΙΝΟΜΕΝΕΣ
+                                        ΑΠΑΝΤΗΣΕΙΣ ΘΕΜΑΤΩΝ
+
+      ΘΕΜΑ Α
+      Α1.
+          α. ​        Σωστό
+          β. ​        Σωστό
+          γ.​         Λάθος
+          δ.​         Λάθος
+          ε. ​        Σωστό
+      Α2.
+      ​   1.​         δ
+      ​   2.​         γ
+      ​   3.​         β
+      ​   4.​         α
+      ​   5.​         στ
+
+      ΘΕΜΑ Β
+      Β1.
+      α)
+      def max_poso(self):
+           MAX=self.poliseis[0]
+           for item in self.poliseis:
+                if item>MAX:
+                     MAX=item
+                 return MAX​
+      β)
+      politis1=Politis("Ιωάννα Κωνσταντίνου",[10000,15000,5000,20000])
+      γ)
+      print politis1.max_poso()
+
+      Β2.
+      (1)​       “”
+      (2)​       lexi
+      (3)​       arxika
+      (4)​       0
+      (5)​       arxika
+ΣΕΛΙΔΑ 1
+
+                                                       https://www.eykleidisfrontistirio.gr/
+                           ΕΝΔΕΙΚΤΙΚΕΣ ΑΠΑΝΤΗΣΕΙΣ ΠΑΝΕΛΛΑΔΙΚΩΝ ΕΞΕΤΑΣΕΩΝ
+  ​         ​   ​       ΣΤΟ ΜΑΘΗΜΑ ΤΟΥ ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΥ ΥΠΟΛΟΓΙΣΤΩΝ - ΕΠΑΛ 2024
+
+
+
+      B3.
+                    1.​ ΠΡΟΤΥΠΟ
+                    2.​ ΠΡΟΤΥΠΟ ΕΠΑΛ
+                    3.​ ΤΥΠΟ ΕΠΑΛ
+                    4.​ ΕΠΑΛ
+                    5.​ ΠΕ
+
+      ΘΕΜΑ Γ
+      def YPOLOGISMOS(m):
+          return m*4
+
+      eispraksi=0
+      math_pepal=0.0 ​# συνολικός αριθμός μαθητών ΠΕΠΑΛ
+      math=0.0 ​ ​     # συνολικός αριθμός μαθητών ΟΛΩΝ ΣΧΟΛΛΕΙΩΝ
+      for i in range(5):
+          for i in range(4):
+              on=raw_input('Δώσε όνομα σχολειου: ')
+              typos=raw_input('Δώσε τυπο σχολείου (ΕΠΑΛ/ΠΕΠΑΛ/ΓΕΛ/ΜΟΥΣ): ')
+              N=int(input('Δώσε αριθμό μαθητών: '))
+              while not(N>=20 and N<=50):
+                   N=int(input('Δώσε αριθμό μαθητών: '))
+              kostos=YPOLOGISMOS(N)
+              print 'Κόστος εισιτηριών για ', on, ' είναι ', kostos, 'euro'
+              eispraksi+=kostos
+              math+=N
+              if typos=="ΠΕΠΑΛ":
+                   math_pepal+=N
+
+      print 'Συνολική είσπραξη: ', eispraksi, 'euro'
+      pos_math_pepal=math_pepal/math*100
+      print pos_math_pepal,'% των μαθητων ηταν απο ΠΕΠΑΛ'
+
+
+
+
+ΣΕΛΙΔΑ 2
+
+                                                     https://www.eykleidisfrontistirio.gr/
+                      ΕΝΔΕΙΚΤΙΚΕΣ ΑΠΑΝΤΗΣΕΙΣ ΠΑΝΕΛΛΑΔΙΚΩΝ ΕΞΕΤΑΣΕΩΝ
+  ​     ​      ​   ΣΤΟ ΜΑΘΗΜΑ ΤΟΥ ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΥ ΥΠΟΛΟΓΙΣΤΩΝ - ΕΠΑΛ 2024
+
+      ΘΕΜΑ Δ
+      ANS=["a","d","b","b","a","c","d","a","b","c"]
+      KOD=[]
+      SB=[]
+
+      for i in range(300):
+          k=raw_input('Δώσε κωδικό υποψηφίου: ')
+          KOD.append(k)
+          vath=0
+          for j in range(10):
+              ap=raw_input('Επέλεξε απάντηση (a/b/c/d): ')
+              if ap==ANS[j]:
+                  vath+=5
+          SB.append(vath)
+
+      for i in range(300):
+          if SB[i]>30:
+              print KOD[i]
+      N=len(SB)
+      for i in range(N-1):
+          for j in range(N-1, i, -1):
+              if SB[j]>SB[j-1]:
+                  SB[j],SB[j-1]=SB[j-1],SB[j]
+                  KOD[j],KOD[j-1]=KOD[j-1],KOD[j]
+      f=open("lang.txt", "w")
+      for i in range(300):
+          L=KOD[i]+" "+str(SB[i])+"\n"
+          f.write(L)
+      f.close()
+
+
+
+
+ΣΕΛΙΔΑ 3
+
+                                                https://www.eykleidisfrontistirio.gr/
+

@@ -1,0 +1,132 @@
+ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΣ ΥΠΟΛΟΓΙΣΤΩΝ
+
+
+           11:45
+Σελίδα 2 από 6
+           ΠΑΝΕΛΛΑΔΙΚΕΣ ΕΞΕΤΑΣΕΙΣ Γ΄ ΤΑΞΗΣ
+                 ΗΜΕΡΗΣΙΩΝ ΛΥΚΕΙΩΝ
+
+
+ΗΜΕΡΟΜΗΝΙΑ ΕΞΕΤΑΣΗΣ:     10 Ιουνίου 2023
+
+ΕΞΕΤΑΖΟΜΕΝΟ ΜΑΘΗΜΑ:    Προγραμματισμός Υπολογιστών
+
+
+                ΠΡΟΤΕΙΝΟΜΕΝΕΣ
+              ΑΠΑΝΤΗΣΕΙΣ ΘΕΜΑΤΩΝ
+
+
+
+
+                                            Σελίδα 3 από 6
+ΘΕΜΑ Α
+
+Α1. α.Σ, β.Λ, γ.Λ, δ.Σ, ε.Σ
+Α2. 1.β, 2.α, 3.στ, 4.ε, 5.γ
+
+ΘΕΜΑ Β
+
+Β1.
+α)
+def find_mo(self):
+        mo=(self.vath1+self.vath2)/2.0
+        return mo
+β)
+student1=Student(‘Ιωάννου’,7,6)
+student2=Student(‘Αναστασίου’,10,9)
+γ)
+mo1=student1.find_mo()
+mo2=student2.find_mo()
+if mo1>mo2:
+        print student1.onoma
+elif mo2>mo1:
+        print student2.onoma
+else:
+        print student1.onoma,student2.onoma
+
+
+
+
+B2.
+S=0
+for i in range(1,11,2): #ή (1,12,2)
+         S=S+i
+         print S
+
+B3.
+
+      Α                   7           8       3   4          -2
+  ο
+ 1 πέρασμα               -2           7       8   3           4
+ 2ο πέρασμα              -2           3       7   8           4
+ 3ο πέρασμα              -2           3       4   7           8
+ 4ο πέρασμα              -2           3       4   7           8
+
+
+
+                                                      Σελίδα 4 από 6
+ΘΕΜΑ Γ
+
+d=open(‘thermo.txt’,w)
+pl=0
+for i in range(10):
+         on=raw_input(‘Δώστε το όνομα της πόλης’)
+         s=0
+         for j in range(30):
+                  therm=input(‘Δώστε θερμοκρασία’)
+                  while therm < -50 or therm > 50:
+                          therm=input(‘Λάθος θερμοκρασία, δώστε νέα’)
+                  s=s+therm
+         mo=s/30.0
+         print mo
+         if mo<0:
+                  pl=pl+1
+         d.write(on+’ ‘+str(mo)+’\n’)
+print pl
+d.close()
+
+ΘΕΜΑ Δ
+
+def anazitisi(k,L):
+       pos=-1
+       N=len(L)
+       i=0
+       while i<N-1 and pos==-1:
+                if L[i]==k:
+                         pos=i
+                else:
+                         i+=1
+       return pos
+
+
+CODE=[]
+ESODA=[]
+kwd=raw_input(‘δώστε κωδικό’)
+while kwd!=0:
+       CODE.append(kwd)
+       timi=input(‘δώστε τιμή’)
+       plithos=int(input(‘Πόσα τεμάχια πωλήθηκαν;’))
+       es=timi*plithos
+       ESODA.append(es)
+       kwd=raw_input(‘Δώστε νέο κωδικό’)
+N=len(CODE)
+k=raw_input(‘Δώστε τον κωδικό του προϊόντος που ψάχνετε’)
+pos=anazitisi(k,CODE)
+
+                                                                        Σελίδα 5 από 6
+if pos==-1:
+         print ‘Δεν υπάρχει προϊόν με αυτόν τον κωδικό’
+else:
+         print ESODA[pos]
+pl=0
+for i in CODE:
+         if i[:2]=’GR’:    #εναλλακτικά if ‘GR’ in i διότι μας δίνουν συγκεκριμένη μορφή κωδικού
+                   pl=pl+1
+pososto=pl/float(N)
+print pososto
+
+
+
+
+                                                                                 Σελίδα 6 από 6
+

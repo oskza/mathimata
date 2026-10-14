@@ -1,0 +1,186 @@
+ΘΕΜΑ Α
+
+Α1.
+
+      α. Λ
+
+      β. Σ
+
+      γ. Σ
+
+      δ. Λ
+
+      ε. Σ
+
+Α2.
+
+      1.     Ε
+      2.     Στ
+      3.     Γ
+      4.     Α
+      5.     Β
+
+
+
+
+ΘΕΜΑ Β
+
+Β1.
+
+      ΔΩΔΕΚΑΝΗΣΑ
+
+      ΝΑΞΟΣ
+
+      ΚΥΚΛΑΔΕΣΝΑΞΟΣ
+
+      4
+Β2.
+
+α.    def tipose():
+
+              if self.vathmos >= 10:
+
+                      print “Προάγεται”
+
+              else:
+
+                      print “Παραπέμπτεται”
+
+β.
+
+      mathitis1 = Mathitis(103,”Νικολάου”,19)
+
+      mathitis2 = Mathitis(105,”Γεωργίου”,9)
+
+γ.
+
+      mathitis1.tipose()
+
+δ.
+
+      mo = (mathitis1.vathmos + mathitis2.vathmos)/2
+
+B3.
+
+      1.   0
+      2.   Word
+      3.   Letter
+      4.   M
+      5.   1
+      6.   m
+ΘΕΜΑ Γ
+
+# Γ3
+
+def ypologismos(ar):
+
+  xr = 0
+
+  if ar <=3 and ar>=1:
+
+       xr = ar*120
+
+  elif ar>=4 and ar <=6:
+
+       xr = 3*120 + (ar-3)*100
+
+  else:
+
+       xr = 3*120 + 3*100 + (ar-6)*70
+
+  return xr
+
+
+
+synolo = 0 #συνολικά έσοδα
+
+plithos10 = 0 #πλήθος ατόμων που αγόρασαν πάνω από 10 τεμάχια
+
+
+
+#Γ1
+
+for i in range(50):
+
+  ar = int(input("Δώσε τον αριθμό τεμαχίων"))
+
+  xrewsh = ypologismos(ar)
+
+  print xrewsh
+
+  synolo += xrewsh
+
+  if ar > 10:
+
+       plithos10 += 1
+#Γ2
+
+print synolo
+
+print (plithos10/50)*100
+
+ΘΕΜΑ Δ
+
+max = 0
+
+pl = 0
+
+athr = 0
+
+KOD = []
+
+VATH = []
+
+kodikos = raw_input("Δώσε κωδικό")
+
+while kodikos != "TELOS":
+
+  KOD.append(kodikos)
+
+  vathmos = int(input("Δώσε βαθμό"))
+
+  # έλεγχος εγκυρότητας τιμών
+
+  while vathmos >100 or vathmos <1:
+
+      vathmos = int(input("Δώσε βαθμό"))
+
+  VATH.append(vathmos)
+
+  pl += 1
+
+  athr += vathmos
+
+  # εύρεση μέγιστης τιμής
+
+  if max < vathmos:
+
+      max = vathmos
+
+kodikos = raw_input("Δώσε τον επόμενο κωδικό")
+mo = athr/pl
+
+# έλεγχος
+
+for i in range(len(VATH)):
+
+  if VATH[i] == max:
+
+     print KOD[i],max
+
+
+
+f = open("epityxon.txt","w")
+
+for i in range(len(VATH)):
+
+  f.write(str(i) + "." + KOD[i] + str(VATH[i]) + "\n")
+
+f.close()
+
+Επιμέλεια:
+
+ΚΟΥΤΣΟΥΚΗΣ ΝΙΚΟΣ
+
+και τα κέντρα ΔΙΑΚΡΟΤΗΜΑ: Ηράκλειο Κρήτης, Αγία Σοφία
+

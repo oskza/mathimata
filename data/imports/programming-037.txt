@@ -1,0 +1,115 @@
+ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΣ ΥΠΟΛΟΓΙΣΤΩΝ
+
+
+           11:14
+Σελίδα 2 από 5
+               ΠΑΝΕΛΛΑΔΙΚΕΣ ΕΞΕΤΑΣΕΙΣ Γ΄ ΤΑΞΗΣ
+            ΗΜΕΡΗΣΙΩΝ ΕΠΑΓΓΕΛΜΑΤΙΚΩΝ ΛΥΚΕΙΩΝ
+
+
+ΗΜΕΡΟΜΗΝΙΑ ΕΞΕΤΑΣΗΣ:                    11/06/2022
+                                   ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΣ
+ΕΞΕΤΑΖΟΜΕΝΟ ΜΑΘΗΜΑ:
+                                   ΥΠΟΛΟΓΙΣΤΩΝ
+
+
+                              ΠΡΟΤΕΙΝΟΜΕΝΕΣ
+                        ΑΠΑΝΤΗΣΕΙΣ ΘΕΜΑΤΩΝ
+ΘΕΜΑ Α
+Α1 α.Λ, β.Σ, γ.Σ, δ.Λ, ε.Σ
+Α2 1.ε, 2.στ, 3.γ, 4.α, 5.β
+ΘΕΜΑ Β
+B1.
+ΔΩΔΕΚΑΝΗΣΑ
+ΝΑΞΟΣ
+ΚΥΚΛΑΔΕΣΝΑΞΟΣ
+4
+
+B2
+α)
+def tipose(self):
+      if self.vathmos>=10:
+             print ‘Προάγεται’
+      else:
+             print ‘Παραπέμπεται’
+β)
+mathitis1=Mathitis(103,’Nικολάου’,19)
+mathitis2=Mathitis(105,’Γεωργίου’,9)
+
+
+                                                     Σελίδα 3 από 5
+γ)
+mathitis1.tipose()
+
+δ)
+mo=(mathitis1.vathmos+mathitis2.vathmos)/2.0
+print mo
+
+B3. 1. 0 , 2.word, 3.letter, 4.m, 5. 1, 6.m
+
+ΘΕΜΑ Γ
+
+def ypologismos(a):
+  if a<=3:
+     xr=a*120
+  elif a<=6:
+     xr=3*120+(a-3)*100
+  else:
+     xr=3*120+3*100+(a-6)*70
+  return xr
+
+sin_es=0 #συνολικά έσοδα
+pl10=0 #πάνω από 10 τεμάχια
+for i in range(50):
+   tem=int(input('Πόσα τεμάχια αγόρασατε;'))
+   xr=ypologismos(tem)
+   print xr
+   sin_es+=xr
+   if tem>10:
+      pl10+=1
+print 'Συνολικά έσοδα καταστήματος:',sin_es,'ευρώ'
+pososto=pl10/50.0
+print 'Το ποσοστό είναι',pososto,'%'
+
+
+
+
+                                                     Σελίδα 4 από 5
+ΘΕΜΑ Δ
+
+KOD=[]
+VATH=[]
+kwd=raw_input('Δώστε τον κωδικό σας')
+while kwd!='ΤΕΛΟΣ':
+  v=int(input('Δώστε τον βαθμό σας'))
+  while v<1 or v>100:
+      v=int(input('Δώστε ξανά τον βαθμό σας'))
+  KOD.append(kwd)
+  VATH.append(v)
+  kwd=raw_input('Δώστε τον κωδικό σας')
+N=len(KOD)
+sum=0.0
+for i in VATH:
+  sum+=i
+mo=sum/N
+print 'Ο μέσος όρος των βαθμολογιών είναι:',mo
+max=0
+for i in VATH:
+  if i >max:
+      max=i
+for i in range(N):
+  if VATH[i]==max:
+      print KOD[i]
+row=1
+d=open('epityxon.txt','w')
+for i in range(N):
+  if VATH[i]>60:
+      d.write(str(row)+'.'+KOD[i]+'\n')
+      row+=1
+d.close()
+
+
+
+
+                                                 Σελίδα 5 από 5
+

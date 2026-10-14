@@ -1,0 +1,112 @@
+ΘΕΜΑ Α
+A1.
+α. Σωστό
+β. Σωστό
+γ. Λάθος
+δ. Σωστό
+ε. Λάθος
+Α2.
+    1. δ
+    2. α
+    3. ε
+    4. στ
+    5. β
+
+
+ΘΕΜΑ Β
+B1.
+α) 1, 2, 3, 4, 5, 6
+β)
+for x in range(6):
+   print x+1
+
+B2.
+      1.   2
+      2.   1
+      3.   10
+      4.   i
+      5.   1
+      6.   x
+
+Β3.
+α) True
+β) False
+γ) False
+
+
+ΘΕΜΑ Γ
+
+
+def TYPOS_EMB(x):
+   if x <= 50:
+       tupos = 1
+   elif x <= 60:
+       tupos = 2
+   elif x <= 70:
+       tupos = 3
+   else:
+       tupos = 4
+  return tupos
+
+maxi = 0
+pl = 0
+pl_gun = 0
+age = int(input('Δώσε ηλικία: '))
+while age >= 40:
+   fulo = raw_input('Δώσε φύλο: ')
+   while fulo != 'A' and fulo != 'Γ':
+       fulo = raw_input('Δώσε φύλο: ')
+   amka = raw_input('Δώσε τον Α.Μ.Κ.Α: ')
+   tupos = TYPOS_EMB(age)
+   print 'Για τον ΑΜΚΑ:', amka, 'ο τύπος του εμβολίου είναι', tupos
+   if age > maxi:
+       maxi = age
+       maxamka = amka
+       maxfulo = fulo
+   if fulo == 'Γ':
+       pl_gun +=1
+   pl+=1
+   age = int(input('Δώσε ηλικία: '))
+print 'ΑΜΚΑ και φύλο με μέγιστη ηλικία:', maxamka, maxfulo
+print 'Ποσοστό γυναικών:', pl_gun/float(pl)*100, '%'
+
+
+ΘΕΜΑ Δ
+
+OMADES =[]
+BATHMOI =[]
+for i in range(100):
+   om = raw_input('Δώσε ομάδα:')
+   b = int(input('Δώσε βαθμό:'))
+   OMADES.append(om)
+   BATHMOI.append(b)
+PROK =[]
+BATHPROK =[]
+for i in range(100):
+   if BATHMOI[i] > 150:
+       PROK.append(OMADES[i])
+       BATHPROK.append(BATHMOI[i])
+N = len(BATHPROK)
+for i in range (N-1):
+   for j in range(N-1, i, -1):
+       if BATHPROK[j-1]< BATHPROK[j]:
+           BATHPROK[j-1], BATHPROK[j] = BATHPROK[j], BATHPROK[j-1]
+           PROK[j-1], PROK[j] = PROK[j], PROK[j-1]
+       elif BATHPROK[j-1]== BATHPROK[j]:
+           if PROK[j-1] > PROK[j]:
+          PROK[j-1], PROK[j] = PROK[j], PROK[j-1]
+pl =0
+for i in range(N):
+   if BATHPROK[i] == BATHPROK[0]:
+       pl+=1
+print pl
+
+
+
+Επιμέλεια:
+
+ΚΑΠΠΟΣ ΠΑΝΑΓΙΩΤΗΣ, ΒΑΡΔΑΚΑΣΤΑΝΗΣ ΓΕΡΑΣΙΜΟΣ, ΚΟΥΤΣΟΥΚΗΣ ΝΙΚΟΣ
+
+και τα κέντρα ΔΙΑΚΡΟΤΗΜΑ: Πειραιά, Κερατσίνι, Αιγάλεω, Άλιμος Τράχωνες,
+Καλλιθέα, Ηράκλειο Κρήτης
+

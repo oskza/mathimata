@@ -1,0 +1,116 @@
+          ΕΝΔΕΙΚΤΙΚΕΣ ΑΠΑΝΤΗΣΕΙΣ ΠΑΝΕΛΛΑΔΙΚΩΝ ΕΞΕΤΑΣΕΩΝ
+  ΣΤΟ ΜΑΘΗΜΑ ΤΟΥ ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΥ - ΕΠΑΛ 2023 (Σάββατο 10-6-2023)
+                   επιμέλεια: ΝΙΚΟΣ ΚΑΛΥΒΑΣ (ΠΕ86)
+
+ΘΕΜΑ Α.
+Α1.
+   α. ΣΩΣΤΟ
+   β. ΛΑΘΟΣ
+   γ. ΛΑΘΟΣ
+   δ. ΣΩΣΤΟ
+   ε. ΣΩΣΤΟ
+
+Α2.
+      1. β
+      2. α
+      3. στ
+      4. ε
+      5. γ
+
+ΘΕΜΑ Β.
+Β1.
+def find_mo(self):
+    return (self.vath1+self.vath2)/2.0
+
+student1=Student('Ιωάννου',7,6)
+student2=Student('Αναστασίου',10,9)
+
+mo1=student1.find_mo()
+mo2=student2.find_mo()
+if mo1>mo2:
+    print student1.onoma
+elif mo1<mo2:
+    print student2.onoma
+else:
+    print student1.onoma
+    print student2.onoma
+Β2.
+
+
+s=0
+for i in range(1,11,2):
+    s=s+i
+    print s
+Β3.
+                 Α     7    8      3   4    -2
+          1ο πέρασμα   -2   7      8   3    4
+          2ο πέρασμα   -2   3      7   8    4
+          3ο πέρασμα   -2   3      4   7    8
+          4ο πέρασμα   -2   3      4   7    8
+
+
+
+
+ΘΕΜΑ Γ.
+
+f=open('thermo.txt','w')
+
+p=0
+for i in range(10):
+    on=raw_input('Όνομα πόλης:')
+    s=0
+    for j in range(30):
+        ther=float(input('Θερμοκρασία:'))
+        while ther<-50 or ther>50:
+             ther=float(input('Θερμοκρασία:'))
+        s=s+ther
+    mo=s/30.0
+    print 'MO θερμ. πόλης:',mo
+    if mo<0:
+        p=p+1
+    f.write(on+' '+str(mo)+'\n')
+
+print 'Πλήθος πόλεων με ΜΟ<0:',p
+
+f.close()
+ΘΕΜΑ Δ.
+def anazitisi(C,k):
+    pos=-1
+    found=False
+    i=0
+    while i<len(C) and not found:
+        if C[i]==k:
+            found=True
+            pos=i
+        else:
+            i=i+1
+    return pos
+
+CODE=[]
+ESODA=[]
+
+kod=raw_input('Κωδικός:')
+while kod!='ΤΕΛΟΣ':
+    CODE.append(kod)
+    timi=float(input('Τιμή:'))
+    tem=int(input('Τεμάχια:'))
+    ESODA.append(timi*tem)
+    kod=raw_input('Κωδικός:')
+
+kodikos=raw_input('Δώσε κωδικό:')
+
+t=anazitisi(CODE,kodikos)
+if t==-1:
+    print 'Δεν υπάρχει ο κωδικός'
+else:
+    print ESODA[t]
+
+sgr=0
+sall=0
+for i in range(len(CODE)):
+    sall=sall+ESODA[i]
+    if CODE[i][:2]=='GR':
+        sgr=sgr+ESODA[i]
+pos=sgr/sall*100
+print 'Ποσοστό ελληνικών:',pos,'%'
+
